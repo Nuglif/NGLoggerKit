@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'LoggerKit'
+  s.name             = 'NGLoggerKit'
   s.version          = '0.1'
   s.summary          = 'Logging system customizable and flex'
 
