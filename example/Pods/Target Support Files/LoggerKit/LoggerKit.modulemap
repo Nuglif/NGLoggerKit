@@ -1,0 +1,6 @@
+framework module LoggerKit {
+  umbrella header "LoggerKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
