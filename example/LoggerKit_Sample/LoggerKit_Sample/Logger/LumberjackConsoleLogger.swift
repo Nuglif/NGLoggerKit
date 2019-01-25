@@ -40,5 +40,3 @@ final class LumberjackConsoleLogger: LoggerProtocol {
 		}
 	}
 }
-
-extension LumberjackConsoleLogger: ReuseIDProvider {}

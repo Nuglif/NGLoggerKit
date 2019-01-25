@@ -1,16 +1,12 @@
 # Uncomment the next line to define a global platform for your project
 platform :ios, '9.2'
 
-workspace 'LoggerKit.xcworkspace'
+workspace 'LoggerKit_Sample.xcworkspace'
 
 target 'LoggerKit_Sample' do
 project 'LoggerKit_Sample/LoggerKit_Sample.xcodeproj'
 use_frameworks!
-
-	pod 'RxSwift', :inhibit_warnings => true
-	pod 'CocoaLumberjack/Swift', :git => 'https://github.com/CocoaLumberjack/CocoaLumberjack.git', :branch => 'master', :inhibit_warnings => true
-	pod 'XCGLogger', :inhibit_warnings => true
-	pod 'RxCocoa', :inhibit_warnings => true
-    pod 'LoggerKit', :path => '..'
-    pod 'NGTools'
+	  pod 'XCGLogger', :inhibit_warnings => true
+    pod 'NGLoggerKit', :path => '../NGLoggerKit.podspec'
+    pod 'CocoaLumberjack/Swift', :git => 'https://github.com/CocoaLumberjack/CocoaLumberjack.git', :branch => 'master', :inhibit_warnings => true
 end

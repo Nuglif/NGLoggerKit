@@ -25,6 +25,7 @@
 #import "DDTTYLogger.h"
 #import "DDContextFilterLogFormatter.h"
 #import "DDDispatchQueueLogFormatter.h"
+#import "DDFileLogger+Buffering.h"
 #import "DDMultiFormatter.h"
 #import "CLIColor.h"
 #import "SwiftLogLevel.h"

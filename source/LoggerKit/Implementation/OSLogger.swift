@@ -47,8 +47,9 @@ public final class OSLogger: LoggerProtocol {
 		case .info: os_log("%{public}@", log: log, type: .info, message)
 		case .warning: os_log("%{public}@", log: log, type: .error, message)
 		case .none: os_log("%{public}@", log: log, type: .default, message)
-		default: os_log("%{public}@", log: log, type: .debug, message)
-		}
+		case .verbose: os_log("%{public}@", log: log, type: .debug, message)
+        case .custom(let level): os_log("%{public}@", log: log, type: .debug, "\(level) message")
+        }
 	}
 }
 

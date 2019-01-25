@@ -19,7 +19,6 @@ public final class LoggerBuilder {
 
 		public static let console = ConsoleLoggerMode(rawValue: 1 << 0)
 		public static let oslog = ConsoleLoggerMode(rawValue: 1 << 1)
-		public static let all: ConsoleLoggerMode = [.console, .oslog]
 	}
 
 	private var buildConsoleLoggers: BuildLoggers?
@@ -61,7 +60,11 @@ public final class LoggerBuilder {
 	}
 
 	public func buildDefault(subSystem: String) -> Logger {
-		let consoleLoggers = ContiguousArray(makeConsoleLoggers(mode: .all, suggestedConfiguration: nil)(subSystem))
+        var mode: ConsoleLoggerMode = ConsoleLoggerMode.console
+        if #available(iOS 10.0, *) {
+            mode = .oslog
+        }
+		let consoleLoggers = ContiguousArray(makeConsoleLoggers(mode: mode, suggestedConfiguration: nil)(subSystem))
 		return Logger(subSystem: subSystem, loggers: consoleLoggers)
 	}
 
@@ -69,7 +72,9 @@ public final class LoggerBuilder {
 		return { (subSystem) -> [LoggerProtocol] in
 			var loggers: [LoggerProtocol] = []
 			let configuration = suggestedConfiguration ??
-				ConsoleConfiguration(formatter: SimpleFormatter(), shouldShowLogDetails: false, filter: FilterLevel(minLevel: .info, isStrict: false))
+                ConsoleConfiguration(formatter: ConsoleFormatter(includeDate: false),
+                                     shouldShowLogDetails: false,
+                                     filter: FilterLevel(minLevel: .info, isStrict: false))
 			if mode.contains(.console) {
 				loggers.append(ConsoleLogger(subSystem: subSystem, configuration: configuration))
 			}

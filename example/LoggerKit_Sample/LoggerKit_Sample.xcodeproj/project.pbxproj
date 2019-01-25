@@ -13,8 +13,8 @@
 		6E3D9C3F20F3F64A00F719BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D9C3E20F3F64A00F719BF /* Assets.xcassets */; };
 		6E3D9C4220F3F64A00F719BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E3D9C4020F3F64A00F719BF /* LaunchScreen.storyboard */; };
 		6E9654B120F4DB16000679AE /* LoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E9654B020F4DB16000679AE /* LoggerKit.framework */; };
-		6E9654C520F4EB07000679AE /* LumberjackConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E9654C220F4EB07000679AE /* LumberjackConsoleLogger.swift */; };
 		6E9654C920F4F213000679AE /* ObjcLoggerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9654C820F4F213000679AE /* ObjcLoggerViewController.m */; };
+		6E977BF221FB889600A793B5 /* LumberjackConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E977BF121FB889600A793B5 /* LumberjackConsoleLogger.swift */; };
 		6EDE225920F792C6006D753B /* LoggerKitSampleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EDE225820F792C6006D753B /* LoggerKitSampleCategory.swift */; };
 		CB1A9F0FC9A0AE633EB026CB /* Pods_LoggerKit_Sample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 037D99B9AA871B0482BC8BE8 /* Pods_LoggerKit_Sample.framework */; };
 /* End PBXBuildFile section */
@@ -43,10 +43,10 @@
 		6E3D9C4120F3F64A00F719BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6E3D9C4320F3F64A00F719BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E9654B020F4DB16000679AE /* LoggerKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LoggerKit.framework; path = LoggerKit_Sample/LoggerKit.framework; sourceTree = "<group>"; };
-		6E9654C220F4EB07000679AE /* LumberjackConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LumberjackConsoleLogger.swift; sourceTree = "<group>"; };
 		6E9654C620F4F213000679AE /* LoggerKit_Sample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LoggerKit_Sample-Bridging-Header.h"; sourceTree = "<group>"; };
 		6E9654C720F4F213000679AE /* ObjcLoggerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcLoggerViewController.h; sourceTree = "<group>"; };
 		6E9654C820F4F213000679AE /* ObjcLoggerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcLoggerViewController.m; sourceTree = "<group>"; };
+		6E977BF121FB889600A793B5 /* LumberjackConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LumberjackConsoleLogger.swift; sourceTree = "<group>"; };
 		6EDE225820F792C6006D753B /* LoggerKitSampleCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerKitSampleCategory.swift; sourceTree = "<group>"; };
 		DDB34BC9EC5F2764FE8594BF /* Pods-LoggerKit_Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit_Sample.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-LoggerKit_Sample/Pods-LoggerKit_Sample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,8 +111,8 @@
 		6E9654BE20F4EB07000679AE /* Logger */ = {
 			isa = PBXGroup;
 			children = (
+				6E977BF121FB889600A793B5 /* LumberjackConsoleLogger.swift */,
 				6EDE225820F792C6006D753B /* LoggerKitSampleCategory.swift */,
-				6E9654C220F4EB07000679AE /* LumberjackConsoleLogger.swift */,
 			);
 			path = Logger;
 			sourceTree = "<group>";
@@ -205,23 +205,15 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LoggerKit_Sample/Pods-LoggerKit_Sample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
-				"${BUILT_PRODUCTS_DIR}/LoggerKit/LoggerKit.framework",
-				"${BUILT_PRODUCTS_DIR}/NGTools/NGTools.framework",
+				"${BUILT_PRODUCTS_DIR}/NGLoggerKit/LoggerKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LoggerKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NGTools.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,9 +248,9 @@
 			files = (
 				6EDE225920F792C6006D753B /* LoggerKitSampleCategory.swift in Sources */,
 				6E3D9C3A20F3F64900F719BF /* ViewController.swift in Sources */,
+				6E977BF221FB889600A793B5 /* LumberjackConsoleLogger.swift in Sources */,
 				6E3D9C3820F3F64900F719BF /* AppDelegate.swift in Sources */,
 				6E9654C920F4F213000679AE /* ObjcLoggerViewController.m in Sources */,
-				6E9654C520F4EB07000679AE /* LumberjackConsoleLogger.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
