@@ -1,5 +1,11 @@
 # NGLoggerKit
 
+![](https://img.shields.io/badge/platform-iOS-blue.svg?style=popout-square)
+![](https://img.shields.io/badge/language-Swift-red.svg?style=popout-square)
+![](https://img.shields.io/cocoapods/v/NGLoggerKit.svg?style=popout-square)
+![](https://img.shields.io/badge/Carthage-Compatible-green.svg?style=popout-square)
+![](https://img.shields.io/badge/LICENCE-MIT-lightgrey.svg?style=popout-square)
+
 NGLoggerKit is a logger aggregator, with the possibility to add new output sources (files, remotes...) without having to go through all your app. It is designed to scale across large applications.
 
 ## Installation
@@ -17,8 +23,8 @@ pod 'NGLoggerKit', '~> 0.1'
 
 ```
 
-## Getting Started
 
+## Getting Started
 
 ### How to use
 ```
