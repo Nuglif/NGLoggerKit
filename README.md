@@ -14,13 +14,11 @@ NGLoggerKit is a logger aggregator, with the possibility to add new output sourc
 
 ```
 github "Nuglif/NGLoggerKit"
-
 ```
 
 ### Cocoapods
 ```
 pod 'NGLoggerKit', '~> 0.1'
-
 ```
 
 
