@@ -7,14 +7,14 @@
 //
 
 public struct LogMetaData {
-    let level: LoggerLevel
-    let category: LogCategoryProtocol
-    let subSystem: String
+    public let level: LoggerLevel
+    public let category: LogCategoryProtocol
+    public let subSystem: String
 
-    let userInfo: [String: Any]?
-    let line: Int?
-    let functionName: String?
-    let fileName: String?
+    public let userInfo: [String: Any]?
+    public let line: Int?
+    public let functionName: String?
+    public let fileName: String?
 
     public init(level: LoggerLevel,
                 category: LogCategoryProtocol,
