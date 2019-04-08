@@ -26,7 +26,7 @@ public final class ConsoleLogger: LoggerProtocol {
 			LogMetaData(level: logLevel, category: category, subSystem: subSystem, line: line, functionName: functionName, fileName: fileName) :
 			LogMetaData(level: logLevel, category: category, subSystem: subSystem)
 
-		guard filter.canLog(details: details, message: message)  else { return }
+		guard filter.canLog(details: details, message: message())  else { return }
 		let formattedMessage = formatter.format(message: message(), details: details)
 		print(formattedMessage)
 	}

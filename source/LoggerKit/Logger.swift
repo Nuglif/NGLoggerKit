@@ -71,7 +71,7 @@ public final class Logger {
     /// Remove a logger from the list
     /// - Parameter logger: The instance of the logger present in the list
     public func remove(logger: LoggerProtocol) {
-        guard let index = loggers.index(where: { $0 === logger }) else { return }
+        guard let index = loggers.firstIndex(where: { $0 === logger }) else { return }
         removeLogger(at: index)
     }
 
@@ -113,6 +113,6 @@ extension Logger: LoggerProtocol {
     ///   - functionName: Name of the function which call this function
     ///   - fileName: Name of the file where this function is called
     public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, message: @autoclosure() -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
-        loggers.forEach({ $0.log(logLevel: logLevel, category: category, message: message, line: line, functionName: functionName, fileName: fileName) })
+        loggers.forEach({ $0.log(logLevel: logLevel, category: category, message: message(), line: line, functionName: functionName, fileName: fileName) })
     }
 }

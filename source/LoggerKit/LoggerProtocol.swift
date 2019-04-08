@@ -16,18 +16,18 @@ public protocol LoggerProtocol: class {
 extension LoggerProtocol {
 
     public func info(_ category: LogCategoryProtocol, _ message: @autoclosure () -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
-        log(logLevel: .info, category: category, message: message, line: line, functionName: functionName, fileName: fileName)
+        log(logLevel: .info, category: category, message: message(), line: line, functionName: functionName, fileName: fileName)
     }
 
     public func warning(_ category: LogCategoryProtocol, _ message: @autoclosure () -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
-        log(logLevel: .warning, category: category, message: message, line: line, functionName: functionName, fileName: fileName)
+        log(logLevel: .warning, category: category, message: message(), line: line, functionName: functionName, fileName: fileName)
     }
 
     public func error(_ category: LogCategoryProtocol, _ message: @autoclosure () -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
-        log(logLevel: .error, category: category, message: message, line: line, functionName: functionName, fileName: fileName)
+        log(logLevel: .error, category: category, message: message(), line: line, functionName: functionName, fileName: fileName)
     }
 
     public func verbose(_ category: LogCategoryProtocol, _ message: @autoclosure () -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
-        log(logLevel: .verbose, category: category, message: message, line: line, functionName: functionName, fileName: fileName)
+        log(logLevel: .verbose, category: category, message: message(), line: line, functionName: functionName, fileName: fileName)
     }
 }
