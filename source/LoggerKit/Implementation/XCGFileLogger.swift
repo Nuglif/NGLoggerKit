@@ -38,7 +38,7 @@ public final class XCGFileLogger: LoggerProtocol {
 		let details: LogMetaData = shouldShowLogDetails ?
 			LogMetaData(level: logLevel, category: category, subSystem: subSystem, line: line, functionName: String(describing: functionName), fileName: String(describing: fileName)) :
 			LogMetaData(level: logLevel, category: category, subSystem: subSystem)
-		guard filter.canLog(details: details, message: message)  else { return }
+		guard filter.canLog(details: details, message: message())  else { return }
 
 		let formattedMessage = formatter.format(message: message(), details: details)
 		xclogger.logln(formattedMessage)

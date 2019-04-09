@@ -315,10 +315,11 @@
 				TargetAttributes = {
 					6EB7444320EBF49E006AA942 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1020;
 					};
 					6EB7444C20EBF49E006AA942 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -598,6 +599,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -625,6 +627,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -644,6 +647,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -663,6 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -747,6 +752,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHoc;
@@ -766,6 +772,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AdHoc;
@@ -850,6 +857,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Deskers;
@@ -869,6 +877,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Deskers;
@@ -953,6 +962,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AppStore;
@@ -972,6 +982,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = AppStore;
@@ -1056,6 +1067,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Internal;
@@ -1075,6 +1087,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Internal;
@@ -1159,6 +1172,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Alpha;
@@ -1178,6 +1192,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.LoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Alpha;

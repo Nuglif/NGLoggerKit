@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/nuglif/LoggerKit.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.2'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   s.module_name = 'LoggerKit'
   s.exclude_files = 'LoggerKit_Sample/*'
   s.public_header_files = [

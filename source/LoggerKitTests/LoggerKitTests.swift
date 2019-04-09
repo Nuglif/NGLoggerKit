@@ -11,6 +11,14 @@ import XCTest
 
 class LoggerKitTests: XCTestCase {
 
+    private func curry(_ fn: @escaping (Bool, LoggerLevel) -> FilterProtocol) -> (Bool) -> (LoggerLevel) -> FilterProtocol {
+        return { isStrict in
+            return { level in
+                return fn(isStrict, level)
+            }
+        }
+    }
+
     lazy var filterStrict = curry(makeFilter)(true)
     lazy var filterNotStrict = curry(makeFilter)(false)
 
@@ -41,6 +49,6 @@ class LoggerKitTests: XCTestCase {
     }
 
     private func meta(_ withLevel: LoggerLevel) -> LogMetaData {
-        return LogMetaData(level: withLevel, category: TestCategory())
+        return LogMetaData(level: withLevel, category: TestCategory(), subSystem: "meta tests")
     }
 }
