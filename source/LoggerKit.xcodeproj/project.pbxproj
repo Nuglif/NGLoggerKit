@@ -668,7 +668,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 871F3F9DB4EB7056ACB11AEB /* Pods-LoggerKit-LoggerKitTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z45WA4MSEP;
 				INFOPLIST_FILE = LoggerKitTests/Info.plist;
@@ -688,7 +688,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E9AB22B8F4B59660A1D3FA19 /* Pods-LoggerKit-LoggerKitTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z45WA4MSEP;
 				INFOPLIST_FILE = LoggerKitTests/Info.plist;
