@@ -35,6 +35,7 @@
 		6ECE02F020ED5C6000DFA787 /* LogCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECE02EF20ED5C6000DFA787 /* LogCategoryProtocol.swift */; };
 		6ECE02F320ED6CA500DFA787 /* ELFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ECE02F220ED6CA500DFA787 /* ELFFormatter.swift */; };
 		CFA25820A42834C7A1C4FBDC /* Pods_LoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83A63AA2419B40C58B493FA7 /* Pods_LoggerKit.framework */; };
+		D557287CD1D2D40206DA5D15 /* Pods_LoggerKit_LoggerKitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA08B9537488A48F6E30174D /* Pods_LoggerKit_LoggerKitTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		6FF1C9262D2930DA20E24027 /* Pods-LoggerKit.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.adhoc.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.adhoc.xcconfig"; sourceTree = "<group>"; };
 		7760E359A3106191400D4D67 /* Pods-LoggerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.release.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.release.xcconfig"; sourceTree = "<group>"; };
 		83A63AA2419B40C58B493FA7 /* Pods_LoggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		871F3F9DB4EB7056ACB11AEB /* Pods-LoggerKit-LoggerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit-LoggerKitTests.debug.xcconfig"; path = "Target Support Files/Pods-LoggerKit-LoggerKitTests/Pods-LoggerKit-LoggerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		99E05B34267A58DFDA2FD435 /* Pods-LoggerKitTests.alpha.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.alpha.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.alpha.xcconfig"; sourceTree = "<group>"; };
 		A66360F6A737B15D7DF2ABA6 /* Pods-LoggerKit.deskers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.deskers.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.deskers.xcconfig"; sourceTree = "<group>"; };
 		AF0F4F0A264FE9A87393EDB4 /* Pods_LoggerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +96,7 @@
 		CA08B9537488A48F6E30174D /* Pods_LoggerKit_LoggerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggerKit_LoggerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CFB026A74C1C78CE9C262952 /* Pods-LoggerKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.release.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		D51A93E47AB9973712E5418A /* Pods-LoggerKit.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.internal.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.internal.xcconfig"; sourceTree = "<group>"; };
+		E9AB22B8F4B59660A1D3FA19 /* Pods-LoggerKit-LoggerKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit-LoggerKitTests.release.xcconfig"; path = "Target Support Files/Pods-LoggerKit-LoggerKitTests/Pods-LoggerKit-LoggerKitTests.release.xcconfig"; sourceTree = "<group>"; };
 		FEFAC70F30E65409A3B76287 /* Pods-LoggerKitTests.deskers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.deskers.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.deskers.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -111,6 +114,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EB7444E20EBF49E006AA942 /* LoggerKit.framework in Frameworks */,
+				D557287CD1D2D40206DA5D15 /* Pods_LoggerKit_LoggerKitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +138,8 @@
 				C2C6E76DA55C07DF6223DF2F /* Pods-LoggerKitTests.appstore.xcconfig */,
 				FEFAC70F30E65409A3B76287 /* Pods-LoggerKitTests.deskers.xcconfig */,
 				50CCC462CE4D830ECCB68C25 /* Pods-LoggerKitTests.adhoc.xcconfig */,
+				871F3F9DB4EB7056ACB11AEB /* Pods-LoggerKit-LoggerKitTests.debug.xcconfig */,
+				E9AB22B8F4B59660A1D3FA19 /* Pods-LoggerKit-LoggerKitTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -288,9 +294,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6EB7445B20EBF49E006AA942 /* Build configuration list for PBXNativeTarget "LoggerKitTests" */;
 			buildPhases = (
+				2EADEE34E8CA399188AB8E3D /* [CP] Check Pods Manifest.lock */,
 				6EB7444920EBF49E006AA942 /* Sources */,
 				6EB7444A20EBF49E006AA942 /* Frameworks */,
 				6EB7444B20EBF49E006AA942 /* Resources */,
+				FE3CF59D5E1BBC4C64CE5834 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +367,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2EADEE34E8CA399188AB8E3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoggerKit-LoggerKitTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FA122AEBCC9F3DAE55806CAC /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -379,6 +409,30 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE3CF59D5E1BBC4C64CE5834 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoggerKit-LoggerKitTests/Pods-LoggerKit-LoggerKitTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ObjcExceptionBridging/ObjcExceptionBridging.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjcExceptionBridging.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoggerKit-LoggerKitTests/Pods-LoggerKit-LoggerKitTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -612,6 +666,7 @@
 		};
 		6EB7445C20EBF49E006AA942 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871F3F9DB4EB7056ACB11AEB /* Pods-LoggerKit-LoggerKitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -631,6 +686,7 @@
 		};
 		6EB7445D20EBF49E006AA942 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9AB22B8F4B59660A1D3FA19 /* Pods-LoggerKit-LoggerKitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
