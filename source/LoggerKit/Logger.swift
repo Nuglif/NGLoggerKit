@@ -26,6 +26,9 @@ public final class Logger {
 
     // MARK: Private properties
     private var loggers: ContiguousArray<LoggerProtocol> = []
+    private static let workOnLoggersQeue = DispatchQueue(
+        label: "com.nuglif.loggerkit.logger.workOnLoggersQueue",
+        attributes: .concurrent)
 
     // MARK: Public properties
 
@@ -50,43 +53,61 @@ public final class Logger {
     // MARK: Public methods
 
     public func update(filter: FilterProtocol, where isIncluded: ((LoggerProtocol) -> Bool)?) {
-        if let isIncluded = isIncluded {
-            let loggersToUpdate = loggers.filter(isIncluded)
-            return loggersToUpdate.forEach { $0.filter = filter }
+        Logger.workOnLoggersQeue.async(flags: .barrier) { [weak self] in
+            if let isIncluded = isIncluded {
+                guard let loggersToUpdate = self?.loggers.filter(isIncluded) else {
+                    return
+                }
+                loggersToUpdate.forEach { $0.filter = filter }
+            }
+            self?.loggers.forEach { $0.filter = filter }
         }
-        loggers.forEach { $0.filter = filter }
     }
 
     /// Add a new logger to the list
     /// - Parameter logger: the new logger to add to the list
     public func add(logger: LoggerProtocol) {
-        loggers.append(logger)
+        Logger.workOnLoggersQeue.async(flags: .barrier) { [weak self] in
+            self?.loggers.append(logger)
+        }
     }
 
-    public func remove(where predicate: (LoggerProtocol) -> Bool) {
-        loggers.filter(predicate)
-            .forEach(remove(logger:))
+    public func remove(where predicate: @escaping (LoggerProtocol) -> Bool) {
+        Logger.workOnLoggersQeue.async(flags: .barrier) { [weak self] in
+            self?.loggers.filter(predicate).forEach({ logger in
+                guard let index = self?.loggers.firstIndex(where: { $0 === logger }) else { return }
+                self?.loggers.remove(at: index)
+            })
+        }
     }
 
     /// Remove a logger from the list
     /// - Parameter logger: The instance of the logger present in the list
     public func remove(logger: LoggerProtocol) {
-        guard let index = loggers.firstIndex(where: { $0 === logger }) else { return }
-        removeLogger(at: index)
+        Logger.workOnLoggersQeue.async(flags: .barrier) { [weak self] in
+            guard let index = self?.loggers.firstIndex(where: { $0 === logger }) else { return }
+            self?.loggers.remove(at: index)
+        }
     }
 
     /// Remove logger at index
     /// - Parameter index: Index of the logger which will be removed from the list
     public func removeLogger(at index: Int) {
-        loggers.remove(at: index)
+        Logger.workOnLoggersQeue.async(flags: .barrier) { [weak self] in
+            self?.loggers.remove(at: index)
+        }
     }
 
     public func removeAll() {
-        loggers.removeAll()
+        Logger.workOnLoggersQeue.async(flags: .barrier) { [weak self] in
+            self?.loggers.removeAll()
+        }
     }
 
     public func find(where predicate: (LoggerProtocol) -> Bool) -> [LoggerProtocol] {
-        return loggers.filter(predicate)
+        return Logger.workOnLoggersQeue.sync { [weak self] in
+            return self?.loggers.filter(predicate) ?? []
+        }
     }
 }
 
@@ -99,7 +120,7 @@ extension Logger: LoggerProtocol {
     ///   - category: category of the log
     ///   - message: message to log
     ///   - details: Details of the call, see the sample to see how to use it
-    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, _ message: @autoclosure () -> String, details: LogDetails) {
+    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, message: @escaping @autoclosure () -> String, details: LogDetails) {
         log(logLevel: logLevel, category: category, message: message(), line: details.line, functionName: details.functionName, fileName: details.fileName)
     }
 
@@ -112,7 +133,11 @@ extension Logger: LoggerProtocol {
     ///   - line: line in the file which call this function
     ///   - functionName: Name of the function which call this function
     ///   - fileName: Name of the file where this function is called
-    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, message: @autoclosure() -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
-        loggers.forEach({ $0.log(logLevel: logLevel, category: category, message: message(), line: line, functionName: functionName, fileName: fileName) })
+    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, message: @escaping @autoclosure() -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
+        Logger.workOnLoggersQeue.sync { [weak self] in
+            self?.loggers.forEach({ logger in
+                logger.log(logLevel: logLevel, category: category, message: message(), line: line, functionName: functionName, fileName: fileName)
+            })
+        }
     }
 }
