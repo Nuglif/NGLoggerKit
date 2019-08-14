@@ -49,12 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00A0548B18246CB59B36E501 /* Pods-LoggerKitTests.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.internal.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.internal.xcconfig"; sourceTree = "<group>"; };
 		120F8EE74182EC8CEB5BD960 /* Pods-LoggerKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.debug.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.debug.xcconfig"; sourceTree = "<group>"; };
-		338C68932DD1C6FF43EEFF6A /* Pods-LoggerKit.alpha.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.alpha.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.alpha.xcconfig"; sourceTree = "<group>"; };
-		465D00F37C167B585AE57D4F /* Pods-LoggerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.debug.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		50CCC462CE4D830ECCB68C25 /* Pods-LoggerKitTests.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.adhoc.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.adhoc.xcconfig"; sourceTree = "<group>"; };
-		670CDAD7E375633D495AA2A6 /* Pods-LoggerKit.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.appstore.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.appstore.xcconfig"; sourceTree = "<group>"; };
 		6E0DFEF0212D9FE0000A2C51 /* FileLoggerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileLoggerProtocol.swift; sourceTree = "<group>"; };
 		6E4DB61620FF9517008ADD32 /* LoggerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerMacros.h; sourceTree = "<group>"; };
 		6E4DB61820FF9544008ADD32 /* SimpleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleFormatter.swift; sourceTree = "<group>"; };
@@ -85,19 +80,12 @@
 		6ECE02ED20ED59AE00DFA787 /* LoggerLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerLevel.swift; sourceTree = "<group>"; };
 		6ECE02EF20ED5C6000DFA787 /* LogCategoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogCategoryProtocol.swift; sourceTree = "<group>"; };
 		6ECE02F220ED6CA500DFA787 /* ELFFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ELFFormatter.swift; sourceTree = "<group>"; };
-		6FF1C9262D2930DA20E24027 /* Pods-LoggerKit.adhoc.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.adhoc.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.adhoc.xcconfig"; sourceTree = "<group>"; };
 		7760E359A3106191400D4D67 /* Pods-LoggerKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.release.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.release.xcconfig"; sourceTree = "<group>"; };
 		83A63AA2419B40C58B493FA7 /* Pods_LoggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		871F3F9DB4EB7056ACB11AEB /* Pods-LoggerKit-LoggerKitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit-LoggerKitTests.debug.xcconfig"; path = "Target Support Files/Pods-LoggerKit-LoggerKitTests/Pods-LoggerKit-LoggerKitTests.debug.xcconfig"; sourceTree = "<group>"; };
-		99E05B34267A58DFDA2FD435 /* Pods-LoggerKitTests.alpha.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.alpha.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.alpha.xcconfig"; sourceTree = "<group>"; };
-		A66360F6A737B15D7DF2ABA6 /* Pods-LoggerKit.deskers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.deskers.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.deskers.xcconfig"; sourceTree = "<group>"; };
 		AF0F4F0A264FE9A87393EDB4 /* Pods_LoggerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2C6E76DA55C07DF6223DF2F /* Pods-LoggerKitTests.appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.appstore.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.appstore.xcconfig"; sourceTree = "<group>"; };
 		CA08B9537488A48F6E30174D /* Pods_LoggerKit_LoggerKitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoggerKit_LoggerKitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CFB026A74C1C78CE9C262952 /* Pods-LoggerKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.release.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		D51A93E47AB9973712E5418A /* Pods-LoggerKit.internal.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit.internal.xcconfig"; path = "Target Support Files/Pods-LoggerKit/Pods-LoggerKit.internal.xcconfig"; sourceTree = "<group>"; };
 		E9AB22B8F4B59660A1D3FA19 /* Pods-LoggerKit-LoggerKitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKit-LoggerKitTests.release.xcconfig"; path = "Target Support Files/Pods-LoggerKit-LoggerKitTests/Pods-LoggerKit-LoggerKitTests.release.xcconfig"; sourceTree = "<group>"; };
-		FEFAC70F30E65409A3B76287 /* Pods-LoggerKitTests.deskers.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoggerKitTests.deskers.xcconfig"; path = "Target Support Files/Pods-LoggerKitTests/Pods-LoggerKitTests.deskers.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,18 +114,6 @@
 			children = (
 				120F8EE74182EC8CEB5BD960 /* Pods-LoggerKit.debug.xcconfig */,
 				7760E359A3106191400D4D67 /* Pods-LoggerKit.release.xcconfig */,
-				338C68932DD1C6FF43EEFF6A /* Pods-LoggerKit.alpha.xcconfig */,
-				D51A93E47AB9973712E5418A /* Pods-LoggerKit.internal.xcconfig */,
-				670CDAD7E375633D495AA2A6 /* Pods-LoggerKit.appstore.xcconfig */,
-				A66360F6A737B15D7DF2ABA6 /* Pods-LoggerKit.deskers.xcconfig */,
-				6FF1C9262D2930DA20E24027 /* Pods-LoggerKit.adhoc.xcconfig */,
-				465D00F37C167B585AE57D4F /* Pods-LoggerKitTests.debug.xcconfig */,
-				CFB026A74C1C78CE9C262952 /* Pods-LoggerKitTests.release.xcconfig */,
-				99E05B34267A58DFDA2FD435 /* Pods-LoggerKitTests.alpha.xcconfig */,
-				00A0548B18246CB59B36E501 /* Pods-LoggerKitTests.internal.xcconfig */,
-				C2C6E76DA55C07DF6223DF2F /* Pods-LoggerKitTests.appstore.xcconfig */,
-				FEFAC70F30E65409A3B76287 /* Pods-LoggerKitTests.deskers.xcconfig */,
-				50CCC462CE4D830ECCB68C25 /* Pods-LoggerKitTests.adhoc.xcconfig */,
 				871F3F9DB4EB7056ACB11AEB /* Pods-LoggerKit-LoggerKitTests.debug.xcconfig */,
 				E9AB22B8F4B59660A1D3FA19 /* Pods-LoggerKit-LoggerKitTests.release.xcconfig */,
 			);
