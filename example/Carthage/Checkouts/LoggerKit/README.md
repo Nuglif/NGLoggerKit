@@ -1,2 +1,0 @@
-# LoggerKit
-iOS Logging system
