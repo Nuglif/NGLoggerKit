@@ -1,6 +1,0 @@
-framework module NGTools {
-  umbrella header "NGTools-umbrella.h"
-
-  export *
-  module * { export * }
-}

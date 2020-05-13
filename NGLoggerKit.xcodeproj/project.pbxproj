@@ -1,0 +1,1105 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6EB7444E20EBF49E006AA942 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
+		CD3D0A67239E9EFE004A1C4C /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A49239E9EFE004A1C4C /* curry.swift */; };
+		CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */; };
+		CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */; };
+		CD3D0A6A239E9EFE004A1C4C /* LogCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */; };
+		CD3D0A6B239E9EFE004A1C4C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4D239E9EFE004A1C4C /* Logger.swift */; };
+		CD3D0A6C239E9EFE004A1C4C /* FileLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */; };
+		CD3D0A6D239E9EFE004A1C4C /* LoggerFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */; };
+		CD3D0A6E239E9EFE004A1C4C /* ConsoleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */; };
+		CD3D0A6F239E9EFE004A1C4C /* SimpleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */; };
+		CD3D0A70239E9EFE004A1C4C /* ELFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */; };
+		CD3D0A71239E9EFE004A1C4C /* LoggerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */; };
+		CD3D0A72239E9EFE004A1C4C /* FileConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */; };
+		CD3D0A73239E9EFE004A1C4C /* ConsoleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */; };
+		CD3D0A74239E9EFE004A1C4C /* LoggerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */; };
+		CD3D0A75239E9EFE004A1C4C /* XCGFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */; };
+		CD3D0A76239E9EFE004A1C4C /* OSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */; };
+		CD3D0A77239E9EFE004A1C4C /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */; };
+		CD3D0A78239E9EFE004A1C4C /* ObjcBridgeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */; };
+		CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */; };
+		CD3D0A7B239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A61239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift */; };
+		CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */; };
+		CD3D0A7D239E9EFE004A1C4C /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */; };
+		CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */; };
+		CD3D0A80239E9EFE004A1C4C /* LoggerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */; };
+		CD3D0A88239E9FE9004A1C4C /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D0A87239E9FE9004A1C4C /* XCGLogger.framework */; };
+		CD3D0AB4239EA1CF004A1C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */; };
+		CD3D0AB5239EA1CF004A1C4C /* LumberjackConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA7239EA1CF004A1C4C /* LumberjackConsoleLogger.swift */; };
+		CD3D0AB6239EA1CF004A1C4C /* LoggerKitSampleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA8239EA1CF004A1C4C /* LoggerKitSampleCategory.swift */; };
+		CD3D0AB7239EA1CF004A1C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3D0AA9239EA1CF004A1C4C /* Assets.xcassets */; };
+		CD3D0ABA239EA1CF004A1C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AB0239EA1CF004A1C4C /* AppDelegate.swift */; };
+		CD3D0ABD239EA24F004A1C4C /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
+		CD3D0ABE239EA24F004A1C4C /* NGLoggerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD3D0AD6239EA459004A1C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3D0AD2239EA459004A1C4C /* LaunchScreen.storyboard */; };
+		CD3D0AD7239EA459004A1C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3D0AD4239EA459004A1C4C /* Main.storyboard */; };
+		CD3D0AE7239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */; };
+		CD3D0AE8239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6EB7444F20EBF49E006AA942 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB7443B20EBF49E006AA942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB7444320EBF49E006AA942;
+			remoteInfo = LoggerKit;
+		};
+		CD3D0ABF239EA24F004A1C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6EB7443B20EBF49E006AA942 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EB7444320EBF49E006AA942;
+			remoteInfo = NGLoggerKit;
+		};
+		CD3D0AE1239EA4BA004A1C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 18F3BFD71A81E06E00692297;
+			remoteInfo = "CocoaLumberjack-Static";
+		};
+		CD3D0AE3239EA4BA004A1C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19FF46021B8B4CF400B43179;
+			remoteInfo = CocoaLumberjack;
+		};
+		CD3D0AE5239EA4BA004A1C4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 19FF460F1B8B4D1400B43179;
+			remoteInfo = CocoaLumberjackSwift;
+		};
+		CDFBEEB8246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55E3EE4519D76F280068C3A7;
+			remoteInfo = "XCGLogger (iOS)";
+		};
+		CDFBEEBA246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 554DF41719D76FE7005708BE;
+			remoteInfo = "XCGLogger (macOS)";
+		};
+		CDFBEEBC246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70CB94201B99E728007802FF;
+			remoteInfo = "XCGLogger (watchOS)";
+		};
+		CDFBEEBE246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5515A3DF1BA119FA0047BA31;
+			remoteInfo = "XCGLogger (tvOS)";
+		};
+		CDFBEEC0246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55E3EE5019D76F280068C3A7;
+			remoteInfo = "XCGLoggerTests (iOS)";
+		};
+		CDFBEEC2246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55BB1F011B79DC7500709779;
+			remoteInfo = "XCGLoggerTests (macOS)";
+		};
+		CDFBEEC4246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 558EEB851D6BAC61006A9C7A;
+			remoteInfo = "XCGLoggerTests (watchOS)";
+		};
+		CDFBEEC6246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 558EEB921D6BAC66006A9C7A;
+			remoteInfo = "XCGLoggerTests (tvOS)";
+		};
+		CDFBEEC8246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7573B4BE1DE4146300726CE1;
+			remoteInfo = "ObjcExceptionBridging (iOS)";
+		};
+		CDFBEECA246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7573B4E11DE41AC200726CE1;
+			remoteInfo = "ObjcExceptionBridging (macOS)";
+		};
+		CDFBEECC246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7573B4F01DE41B1800726CE1;
+			remoteInfo = "ObjcExceptionBridging (watchOS)";
+		};
+		CDFBEECE246C820F0071220C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7573B5011DE41B5000726CE1;
+			remoteInfo = "ObjcExceptionBridging (tvOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD3D0AC1239EA24F004A1C4C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD3D0AE8239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Embed Frameworks */,
+				CD3D0ABE239EA24F004A1C4C /* NGLoggerKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGLoggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGLoggerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3D0A49239E9EFE004A1C4C /* curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = curry.swift; sourceTree = "<group>"; };
+		CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIDProvider.swift; sourceTree = "<group>"; };
+		CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logDetails.swift; sourceTree = "<group>"; };
+		CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCategoryProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A4D239E9EFE004A1C4C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoggerProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFormatterProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleFormatter.swift; sourceTree = "<group>"; };
+		CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleFormatter.swift; sourceTree = "<group>"; };
+		CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELFFormatter.swift; sourceTree = "<group>"; };
+		CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerLevel.swift; sourceTree = "<group>"; };
+		CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileConfiguration.swift; sourceTree = "<group>"; };
+		CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleConfiguration.swift; sourceTree = "<group>"; };
+		CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerBuilder.swift; sourceTree = "<group>"; };
+		CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGFileLogger.swift; sourceTree = "<group>"; };
+		CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogger.swift; sourceTree = "<group>"; };
+		CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridgeLogger.swift; sourceTree = "<group>"; };
+		CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLoggerKit.h; sourceTree = "<group>"; };
+		CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConfigurationProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A61239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitFilterProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLevel.swift; sourceTree = "<group>"; };
+		CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
+		CD3D0A64239E9EFE004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerMacros.h; sourceTree = "<group>"; };
+		CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitTests.swift; sourceTree = "<group>"; };
+		CD3D0A83239E9F08004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3D0A87239E9FE9004A1C4C /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3D0A8F239EA143004A1C4C /* iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD3D0AA7239EA1CF004A1C4C /* LumberjackConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LumberjackConsoleLogger.swift; sourceTree = "<group>"; };
+		CD3D0AA8239EA1CF004A1C4C /* LoggerKitSampleCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitSampleCategory.swift; sourceTree = "<group>"; };
+		CD3D0AA9239EA1CF004A1C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD3D0AB0239EA1CF004A1C4C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD3D0AB2239EA1CF004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD3D0AD3239EA459004A1C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD3D0AD5239EA459004A1C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = Example/Carthage/Checkouts/CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = SOURCE_ROOT; };
+		CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCGLogger.xcodeproj; path = Carthage/Checkouts/XCGLogger/XCGLogger.xcodeproj; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6EB7444020EBF49E006AA942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0A88239E9FE9004A1C4C /* XCGLogger.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB7444A20EBF49E006AA942 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6EB7444E20EBF49E006AA942 /* NGLoggerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3D0A8C239EA143004A1C4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0AE7239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Frameworks */,
+				CD3D0ABD239EA24F004A1C4C /* NGLoggerKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EB7443A20EBF49E006AA942 = {
+			isa = PBXGroup;
+			children = (
+				CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */,
+				CD3D0AA3239EA1CF004A1C4C /* Example */,
+				CD3D0A47239E9EFE004A1C4C /* Source */,
+				CD3D0A81239E9F08004A1C4C /* Tests */,
+				6EB7444520EBF49E006AA942 /* Products */,
+				CD3D0A86239E9FE9004A1C4C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6EB7444520EBF49E006AA942 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */,
+				6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */,
+				CD3D0A8F239EA143004A1C4C /* iOS-Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CD3D0A47239E9EFE004A1C4C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A60239E9EFE004A1C4C /* Filter */,
+				CD3D0A4F239E9EFE004A1C4C /* Formatter */,
+				CD3D0A55239E9EFE004A1C4C /* Implementation */,
+				CD3D0A48239E9EFE004A1C4C /* Misc */,
+				CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */,
+				CD3D0A64239E9EFE004A1C4C /* Info.plist */,
+				CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */,
+				CD3D0A4D239E9EFE004A1C4C /* Logger.swift */,
+				CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */,
+				CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */,
+				CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */,
+				CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */,
+				CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */,
+				CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */,
+				CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CD3D0A48239E9EFE004A1C4C /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A49239E9EFE004A1C4C /* curry.swift */,
+				CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */,
+				CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */,
+			);
+			path = Misc;
+			sourceTree = "<group>";
+		};
+		CD3D0A4F239E9EFE004A1C4C /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */,
+				CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */,
+				CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */,
+				CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */,
+			);
+			path = Formatter;
+			sourceTree = "<group>";
+		};
+		CD3D0A55239E9EFE004A1C4C /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A56239E9EFE004A1C4C /* Configuration */,
+				CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */,
+				CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */,
+				CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */,
+				CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		CD3D0A56239E9EFE004A1C4C /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */,
+				CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		CD3D0A60239E9EFE004A1C4C /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A61239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift */,
+				CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */,
+			);
+			path = Filter;
+			sourceTree = "<group>";
+		};
+		CD3D0A81239E9F08004A1C4C /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */,
+				CD3D0A83239E9F08004A1C4C /* Info.plist */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		CD3D0A86239E9FE9004A1C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0A87239E9FE9004A1C4C /* XCGLogger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3D0AA3239EA1CF004A1C4C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0AC2239EA310004A1C4C /* Source */,
+				CD3D0AC3239EA31C004A1C4C /* Resources */,
+				CD3D0AC4239EA325004A1C4C /* Supporting Files */,
+				CD3D0ADA239EA4A1004A1C4C /* Frameworks */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		CD3D0AA6239EA1CF004A1C4C /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0AA7239EA1CF004A1C4C /* LumberjackConsoleLogger.swift */,
+				CD3D0AA8239EA1CF004A1C4C /* LoggerKitSampleCategory.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CD3D0AC2239EA310004A1C4C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0AA6239EA1CF004A1C4C /* Logger */,
+				CD3D0AB0239EA1CF004A1C4C /* AppDelegate.swift */,
+				CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		CD3D0AC3239EA31C004A1C4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0AD2239EA459004A1C4C /* LaunchScreen.storyboard */,
+				CD3D0AD4239EA459004A1C4C /* Main.storyboard */,
+				CD3D0AA9239EA1CF004A1C4C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD3D0AC4239EA325004A1C4C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0AB2239EA1CF004A1C4C /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD3D0ADA239EA4A1004A1C4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD3D0ADC239EA4BA004A1C4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD3D0AE2239EA4BA004A1C4C /* libCocoaLumberjack.a */,
+				CD3D0AE4239EA4BA004A1C4C /* CocoaLumberjack.framework */,
+				CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CDFBEEAA246C820E0071220C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CDFBEEB9246C820F0071220C /* XCGLogger.framework */,
+				CDFBEEBB246C820F0071220C /* XCGLogger.framework */,
+				CDFBEEBD246C820F0071220C /* XCGLogger.framework */,
+				CDFBEEBF246C820F0071220C /* XCGLogger.framework */,
+				CDFBEEC1246C820F0071220C /* XCGLoggerTests (iOS).xctest */,
+				CDFBEEC3246C820F0071220C /* XCGLoggerTests (macOS).xctest */,
+				CDFBEEC5246C820F0071220C /* XCGLoggerTests (watchOS).xctest */,
+				CDFBEEC7246C820F0071220C /* XCGLoggerTests (tvOS).xctest */,
+				CDFBEEC9246C820F0071220C /* ObjcExceptionBridging.framework */,
+				CDFBEECB246C820F0071220C /* ObjcExceptionBridging.framework */,
+				CDFBEECD246C820F0071220C /* ObjcExceptionBridging.framework */,
+				CDFBEECF246C820F0071220C /* ObjcExceptionBridging.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		6EB7444120EBF49E006AA942 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */,
+				CD3D0A80239E9EFE004A1C4C /* LoggerMacros.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6EB7444320EBF49E006AA942 /* NGLoggerKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB7445820EBF49E006AA942 /* Build configuration list for PBXNativeTarget "NGLoggerKit" */;
+			buildPhases = (
+				6EB7443F20EBF49E006AA942 /* Sources */,
+				6EB7444020EBF49E006AA942 /* Frameworks */,
+				6EB7444120EBF49E006AA942 /* Headers */,
+				6EB7444220EBF49E006AA942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NGLoggerKit;
+			productName = LoggerKit;
+			productReference = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6EB7444C20EBF49E006AA942 /* NGLoggerKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6EB7445B20EBF49E006AA942 /* Build configuration list for PBXNativeTarget "NGLoggerKitTests" */;
+			buildPhases = (
+				6EB7444920EBF49E006AA942 /* Sources */,
+				6EB7444A20EBF49E006AA942 /* Frameworks */,
+				6EB7444B20EBF49E006AA942 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6EB7445020EBF49E006AA942 /* PBXTargetDependency */,
+			);
+			name = NGLoggerKitTests;
+			productName = LoggerKitTests;
+			productReference = 6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CD3D0A8E239EA143004A1C4C /* iOS-Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD3D0AA2239EA146004A1C4C /* Build configuration list for PBXNativeTarget "iOS-Example" */;
+			buildPhases = (
+				CD3D0A8B239EA143004A1C4C /* Sources */,
+				CD3D0A8C239EA143004A1C4C /* Frameworks */,
+				CD3D0A8D239EA143004A1C4C /* Resources */,
+				CD3D0AC1239EA24F004A1C4C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD3D0AC0239EA24F004A1C4C /* PBXTargetDependency */,
+			);
+			name = "iOS-Example";
+			productName = "ca.lapresse.iOS-Example";
+			productReference = CD3D0A8F239EA143004A1C4C /* iOS-Example.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6EB7443B20EBF49E006AA942 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Nuglif;
+				TargetAttributes = {
+					6EB7444320EBF49E006AA942 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+					};
+					6EB7444C20EBF49E006AA942 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1020;
+					};
+					CD3D0A8E239EA143004A1C4C = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 6EB7443E20EBF49E006AA942 /* Build configuration list for PBXProject "NGLoggerKit" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6EB7443A20EBF49E006AA942;
+			productRefGroup = 6EB7444520EBF49E006AA942 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD3D0ADC239EA4BA004A1C4C /* Products */;
+					ProjectRef = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
+				},
+				{
+					ProductGroup = CDFBEEAA246C820E0071220C /* Products */;
+					ProjectRef = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				6EB7444320EBF49E006AA942 /* NGLoggerKit */,
+				6EB7444C20EBF49E006AA942 /* NGLoggerKitTests */,
+				CD3D0A8E239EA143004A1C4C /* iOS-Example */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD3D0AE2239EA4BA004A1C4C /* libCocoaLumberjack.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libCocoaLumberjack.a;
+			remoteRef = CD3D0AE1239EA4BA004A1C4C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD3D0AE4239EA4BA004A1C4C /* CocoaLumberjack.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjack.framework;
+			remoteRef = CD3D0AE3239EA4BA004A1C4C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = CocoaLumberjackSwift.framework;
+			remoteRef = CD3D0AE5239EA4BA004A1C4C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEB9246C820F0071220C /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CDFBEEB8246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEBB246C820F0071220C /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CDFBEEBA246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEBD246C820F0071220C /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CDFBEEBC246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEBF246C820F0071220C /* XCGLogger.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = XCGLogger.framework;
+			remoteRef = CDFBEEBE246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEC1246C820F0071220C /* XCGLoggerTests (iOS).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "XCGLoggerTests (iOS).xctest";
+			remoteRef = CDFBEEC0246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEC3246C820F0071220C /* XCGLoggerTests (macOS).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "XCGLoggerTests (macOS).xctest";
+			remoteRef = CDFBEEC2246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEC5246C820F0071220C /* XCGLoggerTests (watchOS).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "XCGLoggerTests (watchOS).xctest";
+			remoteRef = CDFBEEC4246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEC7246C820F0071220C /* XCGLoggerTests (tvOS).xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "XCGLoggerTests (tvOS).xctest";
+			remoteRef = CDFBEEC6246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEEC9246C820F0071220C /* ObjcExceptionBridging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjcExceptionBridging.framework;
+			remoteRef = CDFBEEC8246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEECB246C820F0071220C /* ObjcExceptionBridging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjcExceptionBridging.framework;
+			remoteRef = CDFBEECA246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEECD246C820F0071220C /* ObjcExceptionBridging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjcExceptionBridging.framework;
+			remoteRef = CDFBEECC246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CDFBEECF246C820F0071220C /* ObjcExceptionBridging.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ObjcExceptionBridging.framework;
+			remoteRef = CDFBEECE246C820F0071220C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6EB7444220EBF49E006AA942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB7444B20EBF49E006AA942 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3D0A8D239EA143004A1C4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0AD7239EA459004A1C4C /* Main.storyboard in Resources */,
+				CD3D0AB7239EA1CF004A1C4C /* Assets.xcassets in Resources */,
+				CD3D0AD6239EA459004A1C4C /* LaunchScreen.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EB7443F20EBF49E006AA942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0A6E239E9EFE004A1C4C /* ConsoleFormatter.swift in Sources */,
+				CD3D0A77239E9EFE004A1C4C /* ConsoleLogger.swift in Sources */,
+				CD3D0A6B239E9EFE004A1C4C /* Logger.swift in Sources */,
+				CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */,
+				CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */,
+				CD3D0A6C239E9EFE004A1C4C /* FileLoggerProtocol.swift in Sources */,
+				CD3D0A7B239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift in Sources */,
+				CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */,
+				CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */,
+				CD3D0A71239E9EFE004A1C4C /* LoggerLevel.swift in Sources */,
+				CD3D0A74239E9EFE004A1C4C /* LoggerBuilder.swift in Sources */,
+				CD3D0A70239E9EFE004A1C4C /* ELFFormatter.swift in Sources */,
+				CD3D0A72239E9EFE004A1C4C /* FileConfiguration.swift in Sources */,
+				CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */,
+				CD3D0A78239E9EFE004A1C4C /* ObjcBridgeLogger.swift in Sources */,
+				CD3D0A6D239E9EFE004A1C4C /* LoggerFormatterProtocol.swift in Sources */,
+				CD3D0A6A239E9EFE004A1C4C /* LogCategoryProtocol.swift in Sources */,
+				CD3D0A7D239E9EFE004A1C4C /* LoggerFactory.swift in Sources */,
+				CD3D0A76239E9EFE004A1C4C /* OSLogger.swift in Sources */,
+				CD3D0A73239E9EFE004A1C4C /* ConsoleConfiguration.swift in Sources */,
+				CD3D0A6F239E9EFE004A1C4C /* SimpleFormatter.swift in Sources */,
+				CD3D0A75239E9EFE004A1C4C /* XCGFileLogger.swift in Sources */,
+				CD3D0A67239E9EFE004A1C4C /* curry.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6EB7444920EBF49E006AA942 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD3D0A8B239EA143004A1C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD3D0AB6239EA1CF004A1C4C /* LoggerKitSampleCategory.swift in Sources */,
+				CD3D0AB5239EA1CF004A1C4C /* LumberjackConsoleLogger.swift in Sources */,
+				CD3D0AB4239EA1CF004A1C4C /* ViewController.swift in Sources */,
+				CD3D0ABA239EA1CF004A1C4C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6EB7445020EBF49E006AA942 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB7444320EBF49E006AA942 /* NGLoggerKit */;
+			targetProxy = 6EB7444F20EBF49E006AA942 /* PBXContainerItemProxy */;
+		};
+		CD3D0AC0239EA24F004A1C4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EB7444320EBF49E006AA942 /* NGLoggerKit */;
+			targetProxy = CD3D0ABF239EA24F004A1C4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD3D0AD2239EA459004A1C4C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3D0AD3239EA459004A1C4C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CD3D0AD4239EA459004A1C4C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD3D0AD5239EA459004A1C4C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6EB7445620EBF49E006AA942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6EB7445720EBF49E006AA942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6EB7445920EBF49E006AA942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6EB7445A20EBF49E006AA942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Manual;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.3;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		6EB7445C20EBF49E006AA942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z45WA4MSEP;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6EB7445D20EBF49E006AA942 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z45WA4MSEP;
+				INFOPLIST_FILE = Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CD3D0AA0239EA146004A1C4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z45WA4MSEP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Example",
+					"$(PROJECT_DIR)/Example/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Example/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.lapresse.ca-lapresse-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD3D0AA1239EA146004A1C4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z45WA4MSEP;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Example",
+					"$(PROJECT_DIR)/Example/Carthage/Build/iOS",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Example/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca.lapresse.ca-lapresse-iOS-Example";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6EB7443E20EBF49E006AA942 /* Build configuration list for PBXProject "NGLoggerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB7445620EBF49E006AA942 /* Debug */,
+				6EB7445720EBF49E006AA942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB7445820EBF49E006AA942 /* Build configuration list for PBXNativeTarget "NGLoggerKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB7445920EBF49E006AA942 /* Debug */,
+				6EB7445A20EBF49E006AA942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6EB7445B20EBF49E006AA942 /* Build configuration list for PBXNativeTarget "NGLoggerKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6EB7445C20EBF49E006AA942 /* Debug */,
+				6EB7445D20EBF49E006AA942 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD3D0AA2239EA146004A1C4C /* Build configuration list for PBXNativeTarget "iOS-Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD3D0AA0239EA146004A1C4C /* Debug */,
+				CD3D0AA1239EA146004A1C4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6EB7443B20EBF49E006AA942 /* Project object */;
+}
