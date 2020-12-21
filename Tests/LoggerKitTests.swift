@@ -7,26 +7,13 @@
 //
 
 import XCTest
+
 @testable import NGLoggerKit
 
 class LoggerKitTests: XCTestCase {
 
-    private func curry(_ fn: @escaping (Bool, LoggerLevel) -> FilterProtocol) -> (Bool) -> (LoggerLevel) -> FilterProtocol {
-        return { isStrict in
-            return { level in
-                return fn(isStrict, level)
-            }
-        }
-    }
-
     lazy var filterStrict = curry(makeFilter)(true)
     lazy var filterNotStrict = curry(makeFilter)(false)
-
-    private struct TestCategory: LogCategoryProtocol {
-        var name: String {
-            return "TestCategory"
-        }
-    }
 
     func test_FilterLevel_strict() {
         XCTAssertEqual(filterStrict(.info).canLog(details: meta(.info), message: ""), true)
@@ -41,14 +28,59 @@ class LoggerKitTests: XCTestCase {
         XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.error), message: ""), true)
         XCTAssertEqual(filterNotStrict(.error).canLog(details: meta(.verbose), message: ""), false)
         XCTAssertEqual(filterNotStrict(.custom("Jimmy")).canLog(details: meta(.custom("yoyo")), message: ""), true)
-
     }
 
-    private func makeFilter(isStrict: Bool, with level: LoggerLevel) -> FilterProtocol {
+    func test_Logger_thread_safety() {
+        let builder = LoggerBuilder()
+        let subSystem = "test"
+        let logger = Logger(subSystem: subSystem)
+        let expectation = XCTestExpectation(description: "Dispatch finished")
+        let limit = 1000
+
+        builder.set(configuration: nil, withMode: .oslog)
+        builder.build(subSystem: subSystem)
+            .forEach(logger.add)
+
+        for i in 1 ... limit {
+            DispatchQueue.global().async {
+                let category = NamedCategory(name: "category-\(i)")
+
+                logger.info(category, "--- thread testing ---")
+
+                if i == limit {
+                    expectation.fulfill()
+                }
+            }
+        }
+
+        wait(for: [expectation], timeout: 5)
+    }
+}
+
+// MARK: - LoggerKitTests (private)
+private extension LoggerKitTests {
+
+    struct TestCategory: LogCategoryProtocol {
+        var name: String { "TestCategory" }
+    }
+
+    struct NamedCategory: LogCategoryProtocol {
+        let name: String
+    }
+
+    func curry(_ fn: @escaping (Bool, LoggerLevel) -> FilterProtocol) -> (Bool) -> (LoggerLevel) -> FilterProtocol {
+        return { isStrict in
+            return { level in
+                return fn(isStrict, level)
+            }
+        }
+    }
+
+    func makeFilter(isStrict: Bool, with level: LoggerLevel) -> FilterProtocol {
         return FilterLevel(minLevel: level, isStrict: isStrict)
     }
 
-    private func meta(_ withLevel: LoggerLevel) -> LogMetaData {
+    func meta(_ withLevel: LoggerLevel) -> LogMetaData {
         return LogMetaData(level: withLevel, category: TestCategory(), subSystem: "meta tests")
     }
 }
