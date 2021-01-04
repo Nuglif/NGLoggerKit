@@ -13,6 +13,7 @@ final class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         logger.info(SampleCategory.audio, "Hello info")
         logger.error(SampleCategory.audio, "Hello error")
         logger.verbose(SampleCategory.audio, "Hello verbose")
