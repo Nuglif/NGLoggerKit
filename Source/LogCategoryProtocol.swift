@@ -7,5 +7,6 @@
 //
 
 public protocol LogCategoryProtocol {
+
     var name: String { get }
 }

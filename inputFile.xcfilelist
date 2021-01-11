@@ -1,0 +1,2 @@
+$(SRCROOT)/Carthage/Build/iOS/XCGLogger.framework
+$(SRCROOT)/Carthage/Build/iOS/ObjcExceptionBridging.framework

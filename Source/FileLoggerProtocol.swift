@@ -9,5 +9,6 @@
 import Foundation
 
 public protocol FileLoggerProtocol {
+
     func logFileURLS() -> [URL]
 }

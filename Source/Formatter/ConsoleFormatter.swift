@@ -23,7 +23,7 @@ public struct ConsoleFormatter: LoggerFormatterProtocol {
     }
 
     public func format(message: String, details: LogMetaData) -> String {
-        var heart = "💙"
+        let heart: Character
 
         switch details.level {
         case .error: heart = "💔"
@@ -33,9 +33,10 @@ public struct ConsoleFormatter: LoggerFormatterProtocol {
         default: heart = "💙"
         }
         var formattedMessage = "\(heart) [\(details.level.name)] [\(details.category.name)] -> \(message)"
+
         if let line = details.line,
-            let fileName = details.fileName,
-            let functionName = details.functionName {
+           let fileName = details.fileName,
+           let functionName = details.functionName {
             formatDetails(output: &formattedMessage, line: line, fileName: fileName, functionName: functionName)
         }
 
@@ -46,5 +47,4 @@ public struct ConsoleFormatter: LoggerFormatterProtocol {
         let trimmedFileName = fileName.components(separatedBy: "/").last ?? ""
         output = "[\(trimmedFileName), \(functionName), \(line)] \(output)"
     }
-
 }

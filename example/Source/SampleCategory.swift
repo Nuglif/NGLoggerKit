@@ -1,5 +1,5 @@
 //
-//  LoggerKitSampleCategory.swift
+//  SampleCategory.swift
 //  LoggerKit_Sample
 //
 //  Created by Werck, Ayrton on 18-07-12.
@@ -13,13 +13,12 @@ import NGLoggerKit
 
     @objc static let VIDEO: String = SampleCategory.video.name
     @objc static let AUDIO: String = SampleCategory.audio.name
-
 }
 
 enum SampleCategory: LogCategoryProtocol {
-    case video, audio
 
-    var name: String {
-        return String(describing: self).capitalized
-    }
+    case video
+    case audio
+
+    var name: String { String(describing: self).capitalized }
 }

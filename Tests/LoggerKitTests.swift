@@ -16,18 +16,18 @@ class LoggerKitTests: XCTestCase {
     lazy var filterNotStrict = curry(makeFilter)(false)
 
     func test_FilterLevel_strict() {
-        XCTAssertEqual(filterStrict(.info).canLog(details: meta(.info), message: ""), true)
-        XCTAssertEqual(filterStrict(.info).canLog(details: meta(.error), message: ""), false)
-        XCTAssertEqual(filterStrict(.verbose).canLog(details: meta(.error), message: ""), false)
-        XCTAssertEqual(filterStrict(.custom("Jimmy")).canLog(details: meta(.custom("yoyo")), message: ""), false)
-        XCTAssertEqual(filterStrict(.custom("Jimmy")).canLog(details: meta(.custom("Jimmy")), message: ""), true)
+        XCTAssertEqual(filterStrict(.info).canLog(details: meta(.info)), true)
+        XCTAssertEqual(filterStrict(.info).canLog(details: meta(.error)), false)
+        XCTAssertEqual(filterStrict(.verbose).canLog(details: meta(.error)), false)
+        XCTAssertEqual(filterStrict(.custom("Jimmy")).canLog(details: meta(.custom("yoyo"))), false)
+        XCTAssertEqual(filterStrict(.custom("Jimmy")).canLog(details: meta(.custom("Jimmy"))), true)
     }
 
     func test_FilterLevel_not_strict() {
-        XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.info), message: ""), true)
-        XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.error), message: ""), true)
-        XCTAssertEqual(filterNotStrict(.error).canLog(details: meta(.verbose), message: ""), false)
-        XCTAssertEqual(filterNotStrict(.custom("Jimmy")).canLog(details: meta(.custom("yoyo")), message: ""), true)
+        XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.info)), true)
+        XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.error)), true)
+        XCTAssertEqual(filterNotStrict(.error).canLog(details: meta(.verbose)), false)
+        XCTAssertEqual(filterNotStrict(.custom("Jimmy")).canLog(details: meta(.custom("yoyo"))), true)
     }
 
     func test_Logger_thread_safety() {

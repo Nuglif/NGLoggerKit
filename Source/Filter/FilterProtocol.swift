@@ -7,5 +7,6 @@
 //
 
 public protocol FilterProtocol {
-    func canLog(details: LogMetaData, message: @autoclosure () -> String) -> Bool
+
+    func canLog(details: LogMetaData) -> Bool
 }

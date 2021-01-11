@@ -36,11 +36,12 @@ public enum LoggerLevel: Equatable, Comparable {
     }
 
     public static func < (lhs: LoggerLevel, rhs: LoggerLevel) -> Bool {
-            return lhs.order < rhs.order
+        return lhs.order < rhs.order
     }
 }
 
 extension LoggerLevel: RawRepresentable {
+
     public typealias RawValue = String
 
     public init?(rawValue: String) {
@@ -61,7 +62,5 @@ extension LoggerLevel: RawRepresentable {
         }
     }
 
-    public var rawValue: String {
-        return String(describing: self)
-    }
+    public var rawValue: String { String(describing: self) }
 }
