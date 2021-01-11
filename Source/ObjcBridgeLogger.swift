@@ -9,28 +9,41 @@
 import Foundation
 
 public final class ObjcBridgeLogger: NSObject {
+
     @objc public static let shared = ObjcBridgeLogger()
 
-    public let logger = Logger(subSystem: "Shared Logger")
+    let logger = Logger(subSystem: "Shared Logger")
 
     @objc public func verbose(_ message: String, category: String) {
-        logger.log(logLevel: .verbose, category: Logger.CategoryBridge.custom(category), message: message)
+        logger.log(logLevel: .verbose, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
     @objc public func error(_ message: String, category: String) {
-        logger.log(logLevel: .error, category: Logger.CategoryBridge.custom(category), message: message)
+        logger.log(logLevel: .error, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
     @objc public func warning(_ message: String, category: String) {
-        logger.log(logLevel: .warning, category: Logger.CategoryBridge.custom(category), message: message)
+        logger.log(logLevel: .warning, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
     @objc public func info(_ message: String, category: String) {
-        logger.log(logLevel: .info, category: Logger.CategoryBridge.custom(category), message: message)
+        logger.log(logLevel: .info, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
     @objc public func log(_ message: String, level: String, category: String) {
-        logger.log(logLevel: .custom(level), category: Logger.CategoryBridge.custom(category), message: message)
+        logger.log(logLevel: .custom(level), category: Logger.CategoryBridge.custom(category), message: { message })
     }
+}
 
+extension Logger {
+
+    enum CategoryBridge: LogCategoryProtocol {
+        case custom(String)
+
+        var name: String {
+            switch self {
+            case .custom(let val): return val.capitalized
+            }
+        }
+    }
 }

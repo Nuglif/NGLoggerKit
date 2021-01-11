@@ -11,16 +11,6 @@ import Foundation
 public typealias LogDetails = (line: Int, functionName: String, fileName: String)
 
 public final class Logger {
-    // Objc enum
-    enum CategoryBridge: LogCategoryProtocol {
-        case custom(String)
-
-        var name: String {
-            switch self {
-            case .custom(let val): return val.capitalized
-            }
-        }
-    }
 
     // MARK: Public properties
     public let subSystem: String
@@ -30,20 +20,18 @@ public final class Logger {
     }
 
     // MARK: Private properties
-    private var loggers: ContiguousArray<LoggerProtocol> = []
+    private var loggers: ContiguousArray<LoggerProtocol>
     private let loggerQueue: DispatchQueue
 
     // MARK: Public methods
     public init(subSystem: String) {
+        self.loggers = []
         self.subSystem = subSystem
         self.loggerQueue = DispatchQueue(label: "com.nuglif.NGLoggerKit.\(subSystem)", qos: .utility)
     }
 
     public init(subSystem: String, loggers: ContiguousArray<LoggerProtocol>? = nil) {
-        if let loggers = loggers {
-            self.loggers = loggers
-        }
-
+        self.loggers = loggers ?? []
         self.subSystem = subSystem
         self.loggerQueue = DispatchQueue(label: "com.nuglif.NGLoggerKit.\(subSystem)", qos: .utility)
     }
@@ -109,9 +97,9 @@ extension Logger: LoggerProtocol {
     ///   - category: category of the log
     ///   - message: message to log
     ///   - details: Details of the call, see the sample to see how to use it
-    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, _ message: @escaping @autoclosure () -> String, details: LogDetails) {
+    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, _ message: @escaping () -> String, details: LogDetails) {
         loggerQueue.async {
-            self.loggers.forEach { $0.log(logLevel: logLevel, category: category, message: message(), line: details.line, functionName: details.functionName, fileName: details.fileName) }
+            self.loggers.forEach { $0.log(logLevel: logLevel, category: category, message: message, line: details.line, functionName: details.functionName, fileName: details.fileName) }
         }
     }
 
@@ -124,9 +112,9 @@ extension Logger: LoggerProtocol {
     ///   - line: line in the file which call this function
     ///   - functionName: Name of the function which call this function
     ///   - fileName: Name of the file where this function is called
-    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, message: @escaping @autoclosure() -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
+    public func log(logLevel: LoggerLevel = .none, category: LogCategoryProtocol, message: @escaping () -> String, line: Int = #line, functionName: String = #function, fileName: String = #file) {
         loggerQueue.async {
-            self.loggers.forEach { $0.log(logLevel: logLevel, category: category, message: message(), line: line, functionName: functionName, fileName: fileName) }
+            self.loggers.forEach { $0.log(logLevel: logLevel, category: category, message: message, line: line, functionName: functionName, fileName: fileName) }
         }
     }
 }

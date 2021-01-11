@@ -7,6 +7,7 @@
 //
 
 public final class LoggerBuilder {
+
 	typealias BuildLoggers = (String) -> [LoggerProtocol]
 	typealias BuildLogger = (String) -> LoggerProtocol
 

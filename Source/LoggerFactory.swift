@@ -25,5 +25,4 @@ public final class LoggerFactory {
     public func registeredLogger() -> [String] {
         return loggerAssembly.keys.map { $0 }
     }
-
 }

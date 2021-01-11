@@ -16,7 +16,7 @@ public struct FilterLevel: FilterProtocol {
         self.isStrict = isStrict
     }
 
-    public func canLog(details: LogMetaData, message: @autoclosure () -> String) -> Bool {
+    public func canLog(details: LogMetaData) -> Bool {
         return isStrict ? details.level == minLevel : details.level >= minLevel
     }
 }

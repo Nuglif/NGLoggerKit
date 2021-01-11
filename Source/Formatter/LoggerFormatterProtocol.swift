@@ -7,6 +7,7 @@
 //
 
 public struct LogMetaData {
+
     public let level: LoggerLevel
     public let category: LogCategoryProtocol
     public let subSystem: String
@@ -34,5 +35,6 @@ public struct LogMetaData {
 }
 
 public protocol LoggerFormatterProtocol {
+
     func format(message: String, details: LogMetaData) -> String
 }

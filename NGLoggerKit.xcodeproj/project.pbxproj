@@ -3,11 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6EB7444E20EBF49E006AA942 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
+		A46FAE5025A7637A001FE798 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE4F25A7637A001FE798 /* XCGLogger.framework */; };
+		A46FAE6A25A770E5001FE798 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */; };
+		A46FAE8025A77303001FE798 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
+		A46FAE8125A77303001FE798 /* NGLoggerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD3D0A67239E9EFE004A1C4C /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A49239E9EFE004A1C4C /* curry.swift */; };
 		CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */; };
 		CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */; };
@@ -28,24 +32,18 @@
 		CD3D0A78239E9EFE004A1C4C /* ObjcBridgeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */; };
 		CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */; };
-		CD3D0A7B239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A61239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift */; };
+		CD3D0A7B239E9EFE004A1C4C /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */; };
 		CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */; };
 		CD3D0A7D239E9EFE004A1C4C /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */; };
 		CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */; };
 		CD3D0A80239E9EFE004A1C4C /* LoggerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */; };
-		CD3D0A88239E9FE9004A1C4C /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D0A87239E9FE9004A1C4C /* XCGLogger.framework */; };
 		CD3D0AB4239EA1CF004A1C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */; };
-		CD3D0AB5239EA1CF004A1C4C /* LumberjackConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA7239EA1CF004A1C4C /* LumberjackConsoleLogger.swift */; };
-		CD3D0AB6239EA1CF004A1C4C /* LoggerKitSampleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA8239EA1CF004A1C4C /* LoggerKitSampleCategory.swift */; };
+		CD3D0AB6239EA1CF004A1C4C /* SampleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA8239EA1CF004A1C4C /* SampleCategory.swift */; };
 		CD3D0AB7239EA1CF004A1C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD3D0AA9239EA1CF004A1C4C /* Assets.xcassets */; };
 		CD3D0ABA239EA1CF004A1C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AB0239EA1CF004A1C4C /* AppDelegate.swift */; };
-		CD3D0ABD239EA24F004A1C4C /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
-		CD3D0ABE239EA24F004A1C4C /* NGLoggerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CD3D0AD6239EA459004A1C4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3D0AD2239EA459004A1C4C /* LaunchScreen.storyboard */; };
 		CD3D0AD7239EA459004A1C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD3D0AD4239EA459004A1C4C /* Main.storyboard */; };
-		CD3D0AE7239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */; };
-		CD3D0AE8239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,129 +54,23 @@
 			remoteGlobalIDString = 6EB7444320EBF49E006AA942;
 			remoteInfo = LoggerKit;
 		};
-		CD3D0ABF239EA24F004A1C4C /* PBXContainerItemProxy */ = {
+		A46FAE7E25A772FB001FE798 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6EB7443B20EBF49E006AA942 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6EB7444320EBF49E006AA942;
 			remoteInfo = NGLoggerKit;
 		};
-		CD3D0AE1239EA4BA004A1C4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 18F3BFD71A81E06E00692297;
-			remoteInfo = "CocoaLumberjack-Static";
-		};
-		CD3D0AE3239EA4BA004A1C4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19FF46021B8B4CF400B43179;
-			remoteInfo = CocoaLumberjack;
-		};
-		CD3D0AE5239EA4BA004A1C4C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 19FF460F1B8B4D1400B43179;
-			remoteInfo = CocoaLumberjackSwift;
-		};
-		CDFBEEB8246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55E3EE4519D76F280068C3A7;
-			remoteInfo = "XCGLogger (iOS)";
-		};
-		CDFBEEBA246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 554DF41719D76FE7005708BE;
-			remoteInfo = "XCGLogger (macOS)";
-		};
-		CDFBEEBC246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 70CB94201B99E728007802FF;
-			remoteInfo = "XCGLogger (watchOS)";
-		};
-		CDFBEEBE246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 5515A3DF1BA119FA0047BA31;
-			remoteInfo = "XCGLogger (tvOS)";
-		};
-		CDFBEEC0246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55E3EE5019D76F280068C3A7;
-			remoteInfo = "XCGLoggerTests (iOS)";
-		};
-		CDFBEEC2246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 55BB1F011B79DC7500709779;
-			remoteInfo = "XCGLoggerTests (macOS)";
-		};
-		CDFBEEC4246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 558EEB851D6BAC61006A9C7A;
-			remoteInfo = "XCGLoggerTests (watchOS)";
-		};
-		CDFBEEC6246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 558EEB921D6BAC66006A9C7A;
-			remoteInfo = "XCGLoggerTests (tvOS)";
-		};
-		CDFBEEC8246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7573B4BE1DE4146300726CE1;
-			remoteInfo = "ObjcExceptionBridging (iOS)";
-		};
-		CDFBEECA246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7573B4E11DE41AC200726CE1;
-			remoteInfo = "ObjcExceptionBridging (macOS)";
-		};
-		CDFBEECC246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7573B4F01DE41B1800726CE1;
-			remoteInfo = "ObjcExceptionBridging (watchOS)";
-		};
-		CDFBEECE246C820F0071220C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 7573B5011DE41B5000726CE1;
-			remoteInfo = "ObjcExceptionBridging (tvOS)";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		CD3D0AC1239EA24F004A1C4C /* Embed Frameworks */ = {
+		A46FAE8425A77304001FE798 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				CD3D0AE8239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Embed Frameworks */,
-				CD3D0ABE239EA24F004A1C4C /* NGLoggerKit.framework in Embed Frameworks */,
+				A46FAE8125A77303001FE798 /* NGLoggerKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -188,6 +80,8 @@
 /* Begin PBXFileReference section */
 		6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGLoggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGLoggerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A46FAE4F25A7637A001FE798 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
+		A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
 		CD3D0A49239E9EFE004A1C4C /* curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = curry.swift; sourceTree = "<group>"; };
 		CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIDProvider.swift; sourceTree = "<group>"; };
 		CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logDetails.swift; sourceTree = "<group>"; };
@@ -208,7 +102,7 @@
 		CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridgeLogger.swift; sourceTree = "<group>"; };
 		CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLoggerKit.h; sourceTree = "<group>"; };
 		CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConfigurationProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A61239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitFilterProtocol.swift; sourceTree = "<group>"; };
+		CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProtocol.swift; sourceTree = "<group>"; };
 		CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLevel.swift; sourceTree = "<group>"; };
 		CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
 		CD3D0A64239E9EFE004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -216,18 +110,14 @@
 		CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerMacros.h; sourceTree = "<group>"; };
 		CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitTests.swift; sourceTree = "<group>"; };
 		CD3D0A83239E9F08004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD3D0A87239E9FE9004A1C4C /* XCGLogger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = XCGLogger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3D0A8F239EA143004A1C4C /* iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CD3D0AA7239EA1CF004A1C4C /* LumberjackConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LumberjackConsoleLogger.swift; sourceTree = "<group>"; };
-		CD3D0AA8239EA1CF004A1C4C /* LoggerKitSampleCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitSampleCategory.swift; sourceTree = "<group>"; };
+		CD3D0AA8239EA1CF004A1C4C /* SampleCategory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleCategory.swift; sourceTree = "<group>"; };
 		CD3D0AA9239EA1CF004A1C4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD3D0AB0239EA1CF004A1C4C /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD3D0AB2239EA1CF004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3D0AD3239EA459004A1C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CD3D0AD5239EA459004A1C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Lumberjack.xcodeproj; path = Example/Carthage/Checkouts/CocoaLumberjack/Lumberjack.xcodeproj; sourceTree = SOURCE_ROOT; };
-		CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = XCGLogger.xcodeproj; path = Carthage/Checkouts/XCGLogger/XCGLogger.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,7 +125,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3D0A88239E9FE9004A1C4C /* XCGLogger.framework in Frameworks */,
+				A46FAE6A25A770E5001FE798 /* ObjcExceptionBridging.framework in Frameworks */,
+				A46FAE5025A7637A001FE798 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,8 +142,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3D0AE7239EA4C1004A1C4C /* CocoaLumberjackSwift.framework in Frameworks */,
-				CD3D0ABD239EA24F004A1C4C /* NGLoggerKit.framework in Frameworks */,
+				A46FAE8025A77303001FE798 /* NGLoggerKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,10 +152,9 @@
 		6EB7443A20EBF49E006AA942 = {
 			isa = PBXGroup;
 			children = (
-				CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */,
-				CD3D0AA3239EA1CF004A1C4C /* Example */,
 				CD3D0A47239E9EFE004A1C4C /* Source */,
 				CD3D0A81239E9F08004A1C4C /* Tests */,
+				CD3D0AA3239EA1CF004A1C4C /* Example */,
 				6EB7444520EBF49E006AA942 /* Products */,
 				CD3D0A86239E9FE9004A1C4C /* Frameworks */,
 			);
@@ -288,15 +177,15 @@
 				CD3D0A4F239E9EFE004A1C4C /* Formatter */,
 				CD3D0A55239E9EFE004A1C4C /* Implementation */,
 				CD3D0A48239E9EFE004A1C4C /* Misc */,
-				CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */,
+				CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */,
+				CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */,
 				CD3D0A64239E9EFE004A1C4C /* Info.plist */,
+				CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */,
 				CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */,
 				CD3D0A4D239E9EFE004A1C4C /* Logger.swift */,
 				CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */,
 				CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */,
-				CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */,
 				CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */,
-				CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */,
 				CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */,
 				CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */,
 			);
@@ -307,8 +196,8 @@
 			isa = PBXGroup;
 			children = (
 				CD3D0A49239E9EFE004A1C4C /* curry.swift */,
-				CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */,
 				CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */,
+				CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
@@ -316,10 +205,10 @@
 		CD3D0A4F239E9EFE004A1C4C /* Formatter */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */,
 				CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */,
-				CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */,
 				CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */,
+				CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */,
+				CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */,
 			);
 			path = Formatter;
 			sourceTree = "<group>";
@@ -328,10 +217,10 @@
 			isa = PBXGroup;
 			children = (
 				CD3D0A56239E9EFE004A1C4C /* Configuration */,
-				CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */,
-				CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */,
-				CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */,
 				CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */,
+				CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */,
+				CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */,
+				CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
@@ -339,8 +228,8 @@
 		CD3D0A56239E9EFE004A1C4C /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */,
 				CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */,
+				CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
@@ -348,8 +237,8 @@
 		CD3D0A60239E9EFE004A1C4C /* Filter */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A61239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift */,
 				CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */,
+				CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */,
 			);
 			path = Filter;
 			sourceTree = "<group>";
@@ -366,7 +255,8 @@
 		CD3D0A86239E9FE9004A1C4C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A87239E9FE9004A1C4C /* XCGLogger.framework */,
+				A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */,
+				A46FAE4F25A7637A001FE798 /* XCGLogger.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -377,25 +267,15 @@
 				CD3D0AC2239EA310004A1C4C /* Source */,
 				CD3D0AC3239EA31C004A1C4C /* Resources */,
 				CD3D0AC4239EA325004A1C4C /* Supporting Files */,
-				CD3D0ADA239EA4A1004A1C4C /* Frameworks */,
 			);
 			path = Example;
-			sourceTree = "<group>";
-		};
-		CD3D0AA6239EA1CF004A1C4C /* Logger */ = {
-			isa = PBXGroup;
-			children = (
-				CD3D0AA7239EA1CF004A1C4C /* LumberjackConsoleLogger.swift */,
-				CD3D0AA8239EA1CF004A1C4C /* LoggerKitSampleCategory.swift */,
-			);
-			path = Logger;
 			sourceTree = "<group>";
 		};
 		CD3D0AC2239EA310004A1C4C /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0AA6239EA1CF004A1C4C /* Logger */,
 				CD3D0AB0239EA1CF004A1C4C /* AppDelegate.swift */,
+				CD3D0AA8239EA1CF004A1C4C /* SampleCategory.swift */,
 				CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */,
 			);
 			path = Source;
@@ -417,43 +297,6 @@
 				CD3D0AB2239EA1CF004A1C4C /* Info.plist */,
 			);
 			path = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		CD3D0ADA239EA4A1004A1C4C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */,
-			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		CD3D0ADC239EA4BA004A1C4C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CD3D0AE2239EA4BA004A1C4C /* libCocoaLumberjack.a */,
-				CD3D0AE4239EA4BA004A1C4C /* CocoaLumberjack.framework */,
-				CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		CDFBEEAA246C820E0071220C /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				CDFBEEB9246C820F0071220C /* XCGLogger.framework */,
-				CDFBEEBB246C820F0071220C /* XCGLogger.framework */,
-				CDFBEEBD246C820F0071220C /* XCGLogger.framework */,
-				CDFBEEBF246C820F0071220C /* XCGLogger.framework */,
-				CDFBEEC1246C820F0071220C /* XCGLoggerTests (iOS).xctest */,
-				CDFBEEC3246C820F0071220C /* XCGLoggerTests (macOS).xctest */,
-				CDFBEEC5246C820F0071220C /* XCGLoggerTests (watchOS).xctest */,
-				CDFBEEC7246C820F0071220C /* XCGLoggerTests (tvOS).xctest */,
-				CDFBEEC9246C820F0071220C /* ObjcExceptionBridging.framework */,
-				CDFBEECB246C820F0071220C /* ObjcExceptionBridging.framework */,
-				CDFBEECD246C820F0071220C /* ObjcExceptionBridging.framework */,
-				CDFBEECF246C820F0071220C /* ObjcExceptionBridging.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -496,6 +339,7 @@
 				6EB7444920EBF49E006AA942 /* Sources */,
 				6EB7444A20EBF49E006AA942 /* Frameworks */,
 				6EB7444B20EBF49E006AA942 /* Resources */,
+				A46FAF5725A89BFF001FE798 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -514,12 +358,13 @@
 				CD3D0A8B239EA143004A1C4C /* Sources */,
 				CD3D0A8C239EA143004A1C4C /* Frameworks */,
 				CD3D0A8D239EA143004A1C4C /* Resources */,
-				CD3D0AC1239EA24F004A1C4C /* Embed Frameworks */,
+				A46FAE8425A77304001FE798 /* Embed Frameworks */,
+				A46FAE8925A77336001FE798 /* Carthage */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CD3D0AC0239EA24F004A1C4C /* PBXTargetDependency */,
+				A46FAE7F25A772FB001FE798 /* PBXTargetDependency */,
 			);
 			name = "iOS-Example";
 			productName = "ca.lapresse.iOS-Example";
@@ -560,16 +405,6 @@
 			mainGroup = 6EB7443A20EBF49E006AA942;
 			productRefGroup = 6EB7444520EBF49E006AA942 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = CD3D0ADC239EA4BA004A1C4C /* Products */;
-					ProjectRef = CD3D0ADB239EA4BA004A1C4C /* Lumberjack.xcodeproj */;
-				},
-				{
-					ProductGroup = CDFBEEAA246C820E0071220C /* Products */;
-					ProjectRef = CDFBEEA9246C820E0071220C /* XCGLogger.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				6EB7444320EBF49E006AA942 /* NGLoggerKit */,
@@ -578,114 +413,6 @@
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		CD3D0AE2239EA4BA004A1C4C /* libCocoaLumberjack.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libCocoaLumberjack.a;
-			remoteRef = CD3D0AE1239EA4BA004A1C4C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CD3D0AE4239EA4BA004A1C4C /* CocoaLumberjack.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjack.framework;
-			remoteRef = CD3D0AE3239EA4BA004A1C4C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CD3D0AE6239EA4BA004A1C4C /* CocoaLumberjackSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = CocoaLumberjackSwift.framework;
-			remoteRef = CD3D0AE5239EA4BA004A1C4C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEB9246C820F0071220C /* XCGLogger.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = XCGLogger.framework;
-			remoteRef = CDFBEEB8246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEBB246C820F0071220C /* XCGLogger.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = XCGLogger.framework;
-			remoteRef = CDFBEEBA246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEBD246C820F0071220C /* XCGLogger.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = XCGLogger.framework;
-			remoteRef = CDFBEEBC246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEBF246C820F0071220C /* XCGLogger.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = XCGLogger.framework;
-			remoteRef = CDFBEEBE246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEC1246C820F0071220C /* XCGLoggerTests (iOS).xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "XCGLoggerTests (iOS).xctest";
-			remoteRef = CDFBEEC0246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEC3246C820F0071220C /* XCGLoggerTests (macOS).xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "XCGLoggerTests (macOS).xctest";
-			remoteRef = CDFBEEC2246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEC5246C820F0071220C /* XCGLoggerTests (watchOS).xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "XCGLoggerTests (watchOS).xctest";
-			remoteRef = CDFBEEC4246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEC7246C820F0071220C /* XCGLoggerTests (tvOS).xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "XCGLoggerTests (tvOS).xctest";
-			remoteRef = CDFBEEC6246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEEC9246C820F0071220C /* ObjcExceptionBridging.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ObjcExceptionBridging.framework;
-			remoteRef = CDFBEEC8246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEECB246C820F0071220C /* ObjcExceptionBridging.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ObjcExceptionBridging.framework;
-			remoteRef = CDFBEECA246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEECD246C820F0071220C /* ObjcExceptionBridging.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ObjcExceptionBridging.framework;
-			remoteRef = CDFBEECC246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		CDFBEECF246C820F0071220C /* ObjcExceptionBridging.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = ObjcExceptionBridging.framework;
-			remoteRef = CDFBEECE246C820F0071220C /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		6EB7444220EBF49E006AA942 /* Resources */ = {
@@ -714,6 +441,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A46FAE8925A77336001FE798 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/inputFile.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/outputFile.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+		A46FAF5725A89BFF001FE798 /* Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"$(SRCROOT)/inputFile.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = Carthage;
+			outputFileListPaths = (
+				"$(SRCROOT)/outputFile.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6EB7443F20EBF49E006AA942 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -725,7 +495,7 @@
 				CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */,
 				CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */,
 				CD3D0A6C239E9EFE004A1C4C /* FileLoggerProtocol.swift in Sources */,
-				CD3D0A7B239E9EFE004A1C4C /* LoggerKitFilterProtocol.swift in Sources */,
+				CD3D0A7B239E9EFE004A1C4C /* FilterProtocol.swift in Sources */,
 				CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */,
 				CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */,
 				CD3D0A71239E9EFE004A1C4C /* LoggerLevel.swift in Sources */,
@@ -757,8 +527,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3D0AB6239EA1CF004A1C4C /* LoggerKitSampleCategory.swift in Sources */,
-				CD3D0AB5239EA1CF004A1C4C /* LumberjackConsoleLogger.swift in Sources */,
+				CD3D0AB6239EA1CF004A1C4C /* SampleCategory.swift in Sources */,
 				CD3D0AB4239EA1CF004A1C4C /* ViewController.swift in Sources */,
 				CD3D0ABA239EA1CF004A1C4C /* AppDelegate.swift in Sources */,
 			);
@@ -772,10 +541,10 @@
 			target = 6EB7444320EBF49E006AA942 /* NGLoggerKit */;
 			targetProxy = 6EB7444F20EBF49E006AA942 /* PBXContainerItemProxy */;
 		};
-		CD3D0AC0239EA24F004A1C4C /* PBXTargetDependency */ = {
+		A46FAE7F25A772FB001FE798 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6EB7444320EBF49E006AA942 /* NGLoggerKit */;
-			targetProxy = CD3D0ABF239EA24F004A1C4C /* PBXContainerItemProxy */;
+			targetProxy = A46FAE7E25A772FB001FE798 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -925,13 +694,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -949,13 +722,17 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Source/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1011,8 +788,7 @@
 				DEVELOPMENT_TEAM = Z45WA4MSEP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Example",
-					"$(PROJECT_DIR)/Example/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Example/Supporting Files/Info.plist";
@@ -1042,8 +818,7 @@
 				DEVELOPMENT_TEAM = Z45WA4MSEP;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Example",
-					"$(PROJECT_DIR)/Example/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Example/Supporting Files/Info.plist";

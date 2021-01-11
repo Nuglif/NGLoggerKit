@@ -17,6 +17,5 @@ private func curry(_ fn: @escaping (LoggerLevel, LogCategoryProtocol, @escaping 
                 }
             }
         }
-
     }
 }

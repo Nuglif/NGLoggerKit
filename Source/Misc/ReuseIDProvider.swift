@@ -9,16 +9,13 @@
 import Foundation
 
 public protocol ReuseIDProvider {
+
     static var staticReuseID: String { get }
     var reuseID: String { get }
 }
 
 extension ReuseIDProvider {
-    public static var staticReuseID: String {
-        return String(describing: type(of: self))
-    }
 
-    public var reuseID: String {
-        return String(describing: type(of: self))
-    }
+    public static var staticReuseID: String { String(describing: type(of: self)) }
+    public var reuseID: String { String(describing: type(of: self)) }
 }

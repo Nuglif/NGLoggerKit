@@ -25,12 +25,12 @@ public final class OSLogger: LoggerProtocol {
 		self.shouldShowLogDetails = configuration.shouldShowLogDetails
 	}
 
-	public func log(logLevel: LoggerLevel, category: LogCategoryProtocol, message: @autoclosure () -> String, line: Int, functionName: String, fileName: String) {
+	public func log(logLevel: LoggerLevel, category: LogCategoryProtocol, message: () -> String, line: Int, functionName: String, fileName: String) {
 		let details: LogMetaData = shouldShowLogDetails ?
 			LogMetaData(level: logLevel, category: category, subSystem: subSystem, line: line, functionName: String(describing: functionName), fileName: String(describing: fileName)) :
 			LogMetaData(level: logLevel, category: category, subSystem: subSystem)
 
-		guard filter.canLog(details: details, message: message())  else { return }
+		guard filter.canLog(details: details)  else { return }
 
 		let formattedMessage = formatter.format(message: message(), details: details)
 
