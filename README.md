@@ -5,6 +5,7 @@
 ![](https://img.shields.io/cocoapods/v/NGLoggerKit.svg?style=popout-square)
 ![](https://img.shields.io/badge/Carthage-Compatible-green.svg?style=popout-square)
 ![](https://img.shields.io/badge/LICENCE-MIT-lightgrey.svg?style=popout-square)
+![](https://travis-ci.com/Nuglif/NGLoggerKit.svg?branch=master)
 
 NGLoggerKit is a logger aggregator, with the possibility to add new output sources (files, remotes...) without having to go through all your app. It is designed to scale across large applications.
 
