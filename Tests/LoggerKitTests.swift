@@ -15,7 +15,7 @@ class LoggerKitTests: XCTestCase {
     lazy var filterStrict = curry(makeFilter)(true)
     lazy var filterNotStrict = curry(makeFilter)(false)
 
-    func test_FilterLevel_strict() {
+    func testFilterLevelstrict() {
         XCTAssertEqual(filterStrict(.info).canLog(details: meta(.info)), true)
         XCTAssertEqual(filterStrict(.info).canLog(details: meta(.error)), false)
         XCTAssertEqual(filterStrict(.verbose).canLog(details: meta(.error)), false)
@@ -23,14 +23,14 @@ class LoggerKitTests: XCTestCase {
         XCTAssertEqual(filterStrict(.custom("Jimmy")).canLog(details: meta(.custom("Jimmy"))), true)
     }
 
-    func test_FilterLevel_not_strict() {
+    func testFilterLevelNotStrict() {
         XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.info)), true)
         XCTAssertEqual(filterNotStrict(.info).canLog(details: meta(.error)), true)
         XCTAssertEqual(filterNotStrict(.error).canLog(details: meta(.verbose)), false)
         XCTAssertEqual(filterNotStrict(.custom("Jimmy")).canLog(details: meta(.custom("yoyo"))), true)
     }
 
-    func test_Logger_thread_safety() {
+    func testLoggerThreadSafety() {
         let builder = LoggerBuilder()
         let subSystem = "test"
         let logger = Logger(subSystem: subSystem)

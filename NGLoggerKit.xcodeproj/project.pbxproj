@@ -12,6 +12,8 @@
 		A46FAE6A25A770E5001FE798 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */; };
 		A46FAE8025A77303001FE798 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
 		A46FAE8125A77303001FE798 /* NGLoggerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A4B4AB7925B5E5B300FBDB67 /* LoggerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */; };
+		A4B4AB8325B5EBE600FBDB67 /* ObjcBridge+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */; };
 		CD3D0A67239E9EFE004A1C4C /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A49239E9EFE004A1C4C /* curry.swift */; };
 		CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */; };
 		CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */; };
@@ -29,7 +31,7 @@
 		CD3D0A75239E9EFE004A1C4C /* XCGFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */; };
 		CD3D0A76239E9EFE004A1C4C /* OSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */; };
 		CD3D0A77239E9EFE004A1C4C /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */; };
-		CD3D0A78239E9EFE004A1C4C /* ObjcBridgeLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */; };
+		CD3D0A78239E9EFE004A1C4C /* ObjcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5D239E9EFE004A1C4C /* ObjcBridge.swift */; };
 		CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */; };
 		CD3D0A7B239E9EFE004A1C4C /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */; };
@@ -82,6 +84,8 @@
 		6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGLoggerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A46FAE4F25A7637A001FE798 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 		A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
+		A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerKitTests.m; sourceTree = "<group>"; };
+		A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjcBridge+Tests.swift"; sourceTree = "<group>"; };
 		CD3D0A49239E9EFE004A1C4C /* curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = curry.swift; sourceTree = "<group>"; };
 		CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIDProvider.swift; sourceTree = "<group>"; };
 		CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logDetails.swift; sourceTree = "<group>"; };
@@ -99,7 +103,7 @@
 		CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGFileLogger.swift; sourceTree = "<group>"; };
 		CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogger.swift; sourceTree = "<group>"; };
 		CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
-		CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridgeLogger.swift; sourceTree = "<group>"; };
+		CD3D0A5D239E9EFE004A1C4C /* ObjcBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridge.swift; sourceTree = "<group>"; };
 		CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLoggerKit.h; sourceTree = "<group>"; };
 		CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConfigurationProtocol.swift; sourceTree = "<group>"; };
 		CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProtocol.swift; sourceTree = "<group>"; };
@@ -187,7 +191,7 @@
 				CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */,
 				CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */,
 				CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */,
-				CD3D0A5D239E9EFE004A1C4C /* ObjcBridgeLogger.swift */,
+				CD3D0A5D239E9EFE004A1C4C /* ObjcBridge.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -246,7 +250,9 @@
 		CD3D0A81239E9F08004A1C4C /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */,
 				CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */,
+				A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */,
 				CD3D0A83239E9F08004A1C4C /* Info.plist */,
 			);
 			path = Tests;
@@ -387,7 +393,7 @@
 					};
 					6EB7444C20EBF49E006AA942 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 1230;
 					};
 					CD3D0A8E239EA143004A1C4C = {
 						CreatedOnToolsVersion = 11.2.1;
@@ -491,6 +497,7 @@
 			files = (
 				CD3D0A6E239E9EFE004A1C4C /* ConsoleFormatter.swift in Sources */,
 				CD3D0A77239E9EFE004A1C4C /* ConsoleLogger.swift in Sources */,
+				A4B4AB8325B5EBE600FBDB67 /* ObjcBridge+Tests.swift in Sources */,
 				CD3D0A6B239E9EFE004A1C4C /* Logger.swift in Sources */,
 				CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */,
 				CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */,
@@ -503,7 +510,7 @@
 				CD3D0A70239E9EFE004A1C4C /* ELFFormatter.swift in Sources */,
 				CD3D0A72239E9EFE004A1C4C /* FileConfiguration.swift in Sources */,
 				CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */,
-				CD3D0A78239E9EFE004A1C4C /* ObjcBridgeLogger.swift in Sources */,
+				CD3D0A78239E9EFE004A1C4C /* ObjcBridge.swift in Sources */,
 				CD3D0A6D239E9EFE004A1C4C /* LoggerFormatterProtocol.swift in Sources */,
 				CD3D0A6A239E9EFE004A1C4C /* LogCategoryProtocol.swift in Sources */,
 				CD3D0A7D239E9EFE004A1C4C /* LoggerFactory.swift in Sources */,
@@ -519,6 +526,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4B4AB7925B5E5B300FBDB67 /* LoggerKitTests.m in Sources */,
 				CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -744,6 +752,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z45WA4MSEP;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -754,6 +763,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKitTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -763,6 +773,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z45WA4MSEP;
 				INFOPLIST_FILE = Tests/Info.plist;

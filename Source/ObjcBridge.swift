@@ -1,5 +1,5 @@
 //
-//  ObjcLogger.swift
+//  ObjcBridge.swift
 //  LoggerKit
 //
 //  Created by Werck, Ayrton on 18-07-10.
@@ -8,29 +8,31 @@
 
 import Foundation
 
-public final class ObjcBridgeLogger: NSObject {
+public final class ObjcBridge: NSObject {
 
-    @objc public static let shared = ObjcBridgeLogger()
+    public static let logger = Logger(subSystem: "Shared Logger")
+}
 
-    let logger = Logger(subSystem: "Shared Logger")
+// MARK: - Statics
+@objc public extension ObjcBridge {
 
-    @objc public func verbose(_ message: String, category: String) {
+    static func verbose(_ message: String, category: String) {
         logger.log(logLevel: .verbose, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
-    @objc public func error(_ message: String, category: String) {
+    static func error(_ message: String, category: String) {
         logger.log(logLevel: .error, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
-    @objc public func warning(_ message: String, category: String) {
+    static func warning(_ message: String, category: String) {
         logger.log(logLevel: .warning, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
-    @objc public func info(_ message: String, category: String) {
+    static func info(_ message: String, category: String) {
         logger.log(logLevel: .info, category: Logger.CategoryBridge.custom(category), message: { message })
     }
 
-    @objc public func log(_ message: String, level: String, category: String) {
+    static func log(_ message: String, level: String, category: String) {
         logger.log(logLevel: .custom(level), category: Logger.CategoryBridge.custom(category), message: { message })
     }
 }

@@ -8,9 +8,8 @@
 #ifndef LoggerMacros_h
 #define LoggerMacros_h
 
-#define LOG_INFO(categ, frmt, ...) [[ObjcBridgeLogger shared] info:[NSString stringWithFormat:frmt, ##__VA_ARGS__] category:categ]
-#define LOG_ERROR(categ, frmt, ...) [[ObjcBridgeLogger shared] error:[NSString stringWithFormat:frmt, ##__VA_ARGS__] category:categ]
-#define LOG_WARNING(categ, frmt, ...) [[ObjcBridgeLogger shared] warning:[NSString stringWithFormat:frmt, ##__VA_ARGS__] category:categ]
-
+#define LOG_INFO(categ, frmt, ...) [ObjcBridge info:[NSString stringWithFormat:frmt, ##__VA_ARGS__] category:categ]
+#define LOG_ERROR(categ, frmt, ...) [ObjcBridge error:[NSString stringWithFormat:frmt, ##__VA_ARGS__] category:categ]
+#define LOG_WARNING(categ, frmt, ...) [ObjcBridge warning:[NSString stringWithFormat:frmt, ##__VA_ARGS__] category:categ]
 
 #endif /* LoggerMacros_h */

@@ -30,9 +30,7 @@ public struct FileConfiguration: LoggerConfigurationProtocol {
 	public let filter: FilterProtocol
 	public let autorotateConfiguration: AutoRotateConfiguration?
 
-	public var autoRotateFile: Bool {
-		return autorotateConfiguration != nil
-	}
+	public var autoRotateFile: Bool { autorotateConfiguration != nil }
 
 	public init?(fileName: String,
 		  formatter: LoggerFormatterProtocol,
