@@ -8,37 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		6EB7444E20EBF49E006AA942 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
-		A46FAE5025A7637A001FE798 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE4F25A7637A001FE798 /* XCGLogger.framework */; };
-		A46FAE6A25A770E5001FE798 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */; };
+		A433D55026F39B7F00C9889D /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53326F39B7F00C9889D /* curry.swift */; };
+		A433D55126F39B7F00C9889D /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53426F39B7F00C9889D /* ReuseIDProvider.swift */; };
+		A433D55226F39B7F00C9889D /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53526F39B7F00C9889D /* logDetails.swift */; };
+		A433D55326F39B7F00C9889D /* LogCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53626F39B7F00C9889D /* LogCategoryProtocol.swift */; };
+		A433D55626F39B7F00C9889D /* FileLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53A26F39B7F00C9889D /* FileLoggerProtocol.swift */; };
+		A433D55726F39B7F00C9889D /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53B26F39B7F00C9889D /* Logger.swift */; };
+		A433D55826F39B7F00C9889D /* LoggerFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53D26F39B7F00C9889D /* LoggerFormatterProtocol.swift */; };
+		A433D55926F39B7F00C9889D /* ConsoleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53E26F39B7F00C9889D /* ConsoleFormatter.swift */; };
+		A433D55A26F39B7F00C9889D /* SimpleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53F26F39B7F00C9889D /* SimpleFormatter.swift */; };
+		A433D55B26F39B7F00C9889D /* ELFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54026F39B7F00C9889D /* ELFFormatter.swift */; };
+		A433D55C26F39B7F00C9889D /* LoggerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54126F39B7F00C9889D /* LoggerLevel.swift */; };
+		A433D55D26F39B7F00C9889D /* FileConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54426F39B7F00C9889D /* FileConfiguration.swift */; };
+		A433D55E26F39B7F00C9889D /* ConsoleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54526F39B7F00C9889D /* ConsoleConfiguration.swift */; };
+		A433D55F26F39B7F00C9889D /* LoggerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54626F39B7F00C9889D /* LoggerBuilder.swift */; };
+		A433D56026F39B7F00C9889D /* XCGFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54726F39B7F00C9889D /* XCGFileLogger.swift */; };
+		A433D56126F39B7F00C9889D /* OSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54826F39B7F00C9889D /* OSLogger.swift */; };
+		A433D56226F39B7F00C9889D /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54926F39B7F00C9889D /* ConsoleLogger.swift */; };
+		A433D56326F39B7F00C9889D /* LoggerConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54A26F39B7F00C9889D /* LoggerConfigurationProtocol.swift */; };
+		A433D56426F39B7F00C9889D /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54C26F39B7F00C9889D /* FilterProtocol.swift */; };
+		A433D56526F39B7F00C9889D /* FilterLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54D26F39B7F00C9889D /* FilterLevel.swift */; };
+		A433D56626F39B7F00C9889D /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54E26F39B7F00C9889D /* LoggerFactory.swift */; };
+		A433D56726F39B7F00C9889D /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D54F26F39B7F00C9889D /* LoggerProtocol.swift */; };
+		A433D56A26F39F8300C9889D /* ObjcBridge+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */; };
+		A433D57D26F3A5B200C9889D /* ObjcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D56D26F3A1D400C9889D /* ObjcBridge.swift */; };
+		A433D57E26F3A5B700C9889D /* LoggerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = A433D52D26F396DF00C9889D /* LoggerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A46FAE8025A77303001FE798 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
 		A46FAE8125A77303001FE798 /* NGLoggerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4B4AB7925B5E5B300FBDB67 /* LoggerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */; };
-		A4B4AB8325B5EBE600FBDB67 /* ObjcBridge+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */; };
-		CD3D0A67239E9EFE004A1C4C /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A49239E9EFE004A1C4C /* curry.swift */; };
-		CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */; };
-		CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */; };
-		CD3D0A6A239E9EFE004A1C4C /* LogCategoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */; };
-		CD3D0A6B239E9EFE004A1C4C /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4D239E9EFE004A1C4C /* Logger.swift */; };
-		CD3D0A6C239E9EFE004A1C4C /* FileLoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */; };
-		CD3D0A6D239E9EFE004A1C4C /* LoggerFormatterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */; };
-		CD3D0A6E239E9EFE004A1C4C /* ConsoleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */; };
-		CD3D0A6F239E9EFE004A1C4C /* SimpleFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */; };
-		CD3D0A70239E9EFE004A1C4C /* ELFFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */; };
-		CD3D0A71239E9EFE004A1C4C /* LoggerLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */; };
-		CD3D0A72239E9EFE004A1C4C /* FileConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */; };
-		CD3D0A73239E9EFE004A1C4C /* ConsoleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */; };
-		CD3D0A74239E9EFE004A1C4C /* LoggerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */; };
-		CD3D0A75239E9EFE004A1C4C /* XCGFileLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */; };
-		CD3D0A76239E9EFE004A1C4C /* OSLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */; };
-		CD3D0A77239E9EFE004A1C4C /* ConsoleLogger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */; };
-		CD3D0A78239E9EFE004A1C4C /* ObjcBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5D239E9EFE004A1C4C /* ObjcBridge.swift */; };
+		A4E23023274834A8005DF837 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */; };
+		A4E23024274834AA005DF837 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE4F25A7637A001FE798 /* XCGLogger.framework */; };
 		CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */; };
-		CD3D0A7B239E9EFE004A1C4C /* FilterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */; };
-		CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */; };
-		CD3D0A7D239E9EFE004A1C4C /* LoggerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */; };
-		CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */; };
-		CD3D0A80239E9EFE004A1C4C /* LoggerMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */; };
 		CD3D0AB4239EA1CF004A1C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */; };
 		CD3D0AB6239EA1CF004A1C4C /* SampleCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA8239EA1CF004A1C4C /* SampleCategory.swift */; };
@@ -82,36 +82,36 @@
 /* Begin PBXFileReference section */
 		6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGLoggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGLoggerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A433D52D26F396DF00C9889D /* LoggerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerMacros.h; sourceTree = "<group>"; };
+		A433D53326F39B7F00C9889D /* curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = curry.swift; sourceTree = "<group>"; };
+		A433D53426F39B7F00C9889D /* ReuseIDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIDProvider.swift; sourceTree = "<group>"; };
+		A433D53526F39B7F00C9889D /* logDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logDetails.swift; sourceTree = "<group>"; };
+		A433D53626F39B7F00C9889D /* LogCategoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCategoryProtocol.swift; sourceTree = "<group>"; };
+		A433D53A26F39B7F00C9889D /* FileLoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoggerProtocol.swift; sourceTree = "<group>"; };
+		A433D53B26F39B7F00C9889D /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		A433D53D26F39B7F00C9889D /* LoggerFormatterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFormatterProtocol.swift; sourceTree = "<group>"; };
+		A433D53E26F39B7F00C9889D /* ConsoleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleFormatter.swift; sourceTree = "<group>"; };
+		A433D53F26F39B7F00C9889D /* SimpleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleFormatter.swift; sourceTree = "<group>"; };
+		A433D54026F39B7F00C9889D /* ELFFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELFFormatter.swift; sourceTree = "<group>"; };
+		A433D54126F39B7F00C9889D /* LoggerLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerLevel.swift; sourceTree = "<group>"; };
+		A433D54426F39B7F00C9889D /* FileConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileConfiguration.swift; sourceTree = "<group>"; };
+		A433D54526F39B7F00C9889D /* ConsoleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleConfiguration.swift; sourceTree = "<group>"; };
+		A433D54626F39B7F00C9889D /* LoggerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerBuilder.swift; sourceTree = "<group>"; };
+		A433D54726F39B7F00C9889D /* XCGFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGFileLogger.swift; sourceTree = "<group>"; };
+		A433D54826F39B7F00C9889D /* OSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogger.swift; sourceTree = "<group>"; };
+		A433D54926F39B7F00C9889D /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
+		A433D54A26F39B7F00C9889D /* LoggerConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConfigurationProtocol.swift; sourceTree = "<group>"; };
+		A433D54C26F39B7F00C9889D /* FilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProtocol.swift; sourceTree = "<group>"; };
+		A433D54D26F39B7F00C9889D /* FilterLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLevel.swift; sourceTree = "<group>"; };
+		A433D54E26F39B7F00C9889D /* LoggerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
+		A433D54F26F39B7F00C9889D /* LoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
+		A433D56D26F3A1D400C9889D /* ObjcBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridge.swift; sourceTree = "<group>"; };
 		A46FAE4F25A7637A001FE798 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
 		A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
 		A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerKitTests.m; sourceTree = "<group>"; };
 		A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjcBridge+Tests.swift"; sourceTree = "<group>"; };
-		CD3D0A49239E9EFE004A1C4C /* curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = curry.swift; sourceTree = "<group>"; };
-		CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIDProvider.swift; sourceTree = "<group>"; };
-		CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = logDetails.swift; sourceTree = "<group>"; };
-		CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogCategoryProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A4D239E9EFE004A1C4C /* Logger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileLoggerProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFormatterProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleFormatter.swift; sourceTree = "<group>"; };
-		CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleFormatter.swift; sourceTree = "<group>"; };
-		CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ELFFormatter.swift; sourceTree = "<group>"; };
-		CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerLevel.swift; sourceTree = "<group>"; };
-		CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileConfiguration.swift; sourceTree = "<group>"; };
-		CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleConfiguration.swift; sourceTree = "<group>"; };
-		CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerBuilder.swift; sourceTree = "<group>"; };
-		CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCGFileLogger.swift; sourceTree = "<group>"; };
-		CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OSLogger.swift; sourceTree = "<group>"; };
-		CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConsoleLogger.swift; sourceTree = "<group>"; };
-		CD3D0A5D239E9EFE004A1C4C /* ObjcBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridge.swift; sourceTree = "<group>"; };
 		CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLoggerKit.h; sourceTree = "<group>"; };
-		CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerConfigurationProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterLevel.swift; sourceTree = "<group>"; };
-		CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
 		CD3D0A64239E9EFE004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
-		CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerMacros.h; sourceTree = "<group>"; };
 		CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerKitTests.swift; sourceTree = "<group>"; };
 		CD3D0A83239E9F08004A1C4C /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD3D0A8F239EA143004A1C4C /* iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,8 +129,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A46FAE6A25A770E5001FE798 /* ObjcExceptionBridging.framework in Frameworks */,
-				A46FAE5025A7637A001FE798 /* XCGLogger.framework in Frameworks */,
+				A4E23023274834A8005DF837 /* ObjcExceptionBridging.framework in Frameworks */,
+				A4E23024274834AA005DF837 /* XCGLogger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,7 +156,7 @@
 		6EB7443A20EBF49E006AA942 = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A47239E9EFE004A1C4C /* Source */,
+				CD3D0A47239E9EFE004A1C4C /* Sources */,
 				CD3D0A81239E9F08004A1C4C /* Tests */,
 				CD3D0AA3239EA1CF004A1C4C /* Example */,
 				6EB7444520EBF49E006AA942 /* Products */,
@@ -174,77 +174,101 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		CD3D0A47239E9EFE004A1C4C /* Source */ = {
+		A433D52C26F396DF00C9889D /* ObjC */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A60239E9EFE004A1C4C /* Filter */,
-				CD3D0A4F239E9EFE004A1C4C /* Formatter */,
-				CD3D0A55239E9EFE004A1C4C /* Implementation */,
-				CD3D0A48239E9EFE004A1C4C /* Misc */,
-				CD3D0A66239E9EFE004A1C4C /* LoggerMacros.h */,
-				CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */,
-				CD3D0A64239E9EFE004A1C4C /* Info.plist */,
-				CD3D0A4E239E9EFE004A1C4C /* FileLoggerProtocol.swift */,
-				CD3D0A4C239E9EFE004A1C4C /* LogCategoryProtocol.swift */,
-				CD3D0A4D239E9EFE004A1C4C /* Logger.swift */,
-				CD3D0A5F239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift */,
-				CD3D0A63239E9EFE004A1C4C /* LoggerFactory.swift */,
-				CD3D0A54239E9EFE004A1C4C /* LoggerLevel.swift */,
-				CD3D0A65239E9EFE004A1C4C /* LoggerProtocol.swift */,
-				CD3D0A5D239E9EFE004A1C4C /* ObjcBridge.swift */,
+				A433D56D26F3A1D400C9889D /* ObjcBridge.swift */,
+				A433D52D26F396DF00C9889D /* LoggerMacros.h */,
 			);
-			path = Source;
+			path = ObjC;
 			sourceTree = "<group>";
 		};
-		CD3D0A48239E9EFE004A1C4C /* Misc */ = {
+		A433D53126F39B7F00C9889D /* NGLoggerKit */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A49239E9EFE004A1C4C /* curry.swift */,
-				CD3D0A4B239E9EFE004A1C4C /* logDetails.swift */,
-				CD3D0A4A239E9EFE004A1C4C /* ReuseIDProvider.swift */,
+				A433D53926F39B7F00C9889D /* File */,
+				A433D54B26F39B7F00C9889D /* Filter */,
+				A433D53C26F39B7F00C9889D /* Formatter */,
+				A433D54226F39B7F00C9889D /* Implementation */,
+				A433D53226F39B7F00C9889D /* Misc */,
+				A433D53626F39B7F00C9889D /* LogCategoryProtocol.swift */,
+				A433D53B26F39B7F00C9889D /* Logger.swift */,
+				A433D54A26F39B7F00C9889D /* LoggerConfigurationProtocol.swift */,
+				A433D54E26F39B7F00C9889D /* LoggerFactory.swift */,
+				A433D54126F39B7F00C9889D /* LoggerLevel.swift */,
+				A433D54F26F39B7F00C9889D /* LoggerProtocol.swift */,
+			);
+			path = NGLoggerKit;
+			sourceTree = "<group>";
+		};
+		A433D53226F39B7F00C9889D /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+				A433D53326F39B7F00C9889D /* curry.swift */,
+				A433D53426F39B7F00C9889D /* ReuseIDProvider.swift */,
+				A433D53526F39B7F00C9889D /* logDetails.swift */,
 			);
 			path = Misc;
 			sourceTree = "<group>";
 		};
-		CD3D0A4F239E9EFE004A1C4C /* Formatter */ = {
+		A433D53926F39B7F00C9889D /* File */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A51239E9EFE004A1C4C /* ConsoleFormatter.swift */,
-				CD3D0A53239E9EFE004A1C4C /* ELFFormatter.swift */,
-				CD3D0A50239E9EFE004A1C4C /* LoggerFormatterProtocol.swift */,
-				CD3D0A52239E9EFE004A1C4C /* SimpleFormatter.swift */,
+				A433D53A26F39B7F00C9889D /* FileLoggerProtocol.swift */,
+			);
+			path = File;
+			sourceTree = "<group>";
+		};
+		A433D53C26F39B7F00C9889D /* Formatter */ = {
+			isa = PBXGroup;
+			children = (
+				A433D53D26F39B7F00C9889D /* LoggerFormatterProtocol.swift */,
+				A433D53E26F39B7F00C9889D /* ConsoleFormatter.swift */,
+				A433D53F26F39B7F00C9889D /* SimpleFormatter.swift */,
+				A433D54026F39B7F00C9889D /* ELFFormatter.swift */,
 			);
 			path = Formatter;
 			sourceTree = "<group>";
 		};
-		CD3D0A55239E9EFE004A1C4C /* Implementation */ = {
+		A433D54226F39B7F00C9889D /* Implementation */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A56239E9EFE004A1C4C /* Configuration */,
-				CD3D0A5C239E9EFE004A1C4C /* ConsoleLogger.swift */,
-				CD3D0A59239E9EFE004A1C4C /* LoggerBuilder.swift */,
-				CD3D0A5B239E9EFE004A1C4C /* OSLogger.swift */,
-				CD3D0A5A239E9EFE004A1C4C /* XCGFileLogger.swift */,
+				A433D54326F39B7F00C9889D /* Configuration */,
+				A433D54626F39B7F00C9889D /* LoggerBuilder.swift */,
+				A433D54726F39B7F00C9889D /* XCGFileLogger.swift */,
+				A433D54826F39B7F00C9889D /* OSLogger.swift */,
+				A433D54926F39B7F00C9889D /* ConsoleLogger.swift */,
 			);
 			path = Implementation;
 			sourceTree = "<group>";
 		};
-		CD3D0A56239E9EFE004A1C4C /* Configuration */ = {
+		A433D54326F39B7F00C9889D /* Configuration */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A58239E9EFE004A1C4C /* ConsoleConfiguration.swift */,
-				CD3D0A57239E9EFE004A1C4C /* FileConfiguration.swift */,
+				A433D54426F39B7F00C9889D /* FileConfiguration.swift */,
+				A433D54526F39B7F00C9889D /* ConsoleConfiguration.swift */,
 			);
 			path = Configuration;
 			sourceTree = "<group>";
 		};
-		CD3D0A60239E9EFE004A1C4C /* Filter */ = {
+		A433D54B26F39B7F00C9889D /* Filter */ = {
 			isa = PBXGroup;
 			children = (
-				CD3D0A62239E9EFE004A1C4C /* FilterLevel.swift */,
-				CD3D0A61239E9EFE004A1C4C /* FilterProtocol.swift */,
+				A433D54C26F39B7F00C9889D /* FilterProtocol.swift */,
+				A433D54D26F39B7F00C9889D /* FilterLevel.swift */,
 			);
 			path = Filter;
+			sourceTree = "<group>";
+		};
+		CD3D0A47239E9EFE004A1C4C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A433D53126F39B7F00C9889D /* NGLoggerKit */,
+				A433D52C26F396DF00C9889D /* ObjC */,
+				CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */,
+				CD3D0A64239E9EFE004A1C4C /* Info.plist */,
+			);
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		CD3D0A81239E9F08004A1C4C /* Tests */ = {
@@ -313,7 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */,
-				CD3D0A80239E9EFE004A1C4C /* LoggerMacros.h in Headers */,
+				A433D57E26F3A5B700C9889D /* LoggerMacros.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,6 +358,8 @@
 			dependencies = (
 			);
 			name = NGLoggerKit;
+			packageProductDependencies = (
+			);
 			productName = LoggerKit;
 			productReference = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */;
 			productType = "com.apple.product-type.framework";
@@ -384,7 +410,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1120;
-				LastUpgradeCheck = 0940;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = Nuglif;
 				TargetAttributes = {
 					6EB7444320EBF49E006AA942 = {
@@ -409,6 +435,8 @@
 				Base,
 			);
 			mainGroup = 6EB7443A20EBF49E006AA942;
+			packageReferences = (
+			);
 			productRefGroup = 6EB7444520EBF49E006AA942 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -495,30 +523,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD3D0A6E239E9EFE004A1C4C /* ConsoleFormatter.swift in Sources */,
-				CD3D0A77239E9EFE004A1C4C /* ConsoleLogger.swift in Sources */,
-				A4B4AB8325B5EBE600FBDB67 /* ObjcBridge+Tests.swift in Sources */,
-				CD3D0A6B239E9EFE004A1C4C /* Logger.swift in Sources */,
-				CD3D0A7F239E9EFE004A1C4C /* LoggerProtocol.swift in Sources */,
-				CD3D0A7C239E9EFE004A1C4C /* FilterLevel.swift in Sources */,
-				CD3D0A6C239E9EFE004A1C4C /* FileLoggerProtocol.swift in Sources */,
-				CD3D0A7B239E9EFE004A1C4C /* FilterProtocol.swift in Sources */,
-				CD3D0A69239E9EFE004A1C4C /* logDetails.swift in Sources */,
-				CD3D0A7A239E9EFE004A1C4C /* LoggerConfigurationProtocol.swift in Sources */,
-				CD3D0A71239E9EFE004A1C4C /* LoggerLevel.swift in Sources */,
-				CD3D0A74239E9EFE004A1C4C /* LoggerBuilder.swift in Sources */,
-				CD3D0A70239E9EFE004A1C4C /* ELFFormatter.swift in Sources */,
-				CD3D0A72239E9EFE004A1C4C /* FileConfiguration.swift in Sources */,
-				CD3D0A68239E9EFE004A1C4C /* ReuseIDProvider.swift in Sources */,
-				CD3D0A78239E9EFE004A1C4C /* ObjcBridge.swift in Sources */,
-				CD3D0A6D239E9EFE004A1C4C /* LoggerFormatterProtocol.swift in Sources */,
-				CD3D0A6A239E9EFE004A1C4C /* LogCategoryProtocol.swift in Sources */,
-				CD3D0A7D239E9EFE004A1C4C /* LoggerFactory.swift in Sources */,
-				CD3D0A76239E9EFE004A1C4C /* OSLogger.swift in Sources */,
-				CD3D0A73239E9EFE004A1C4C /* ConsoleConfiguration.swift in Sources */,
-				CD3D0A6F239E9EFE004A1C4C /* SimpleFormatter.swift in Sources */,
-				CD3D0A75239E9EFE004A1C4C /* XCGFileLogger.swift in Sources */,
-				CD3D0A67239E9EFE004A1C4C /* curry.swift in Sources */,
+				A433D56526F39B7F00C9889D /* FilterLevel.swift in Sources */,
+				A433D55226F39B7F00C9889D /* logDetails.swift in Sources */,
+				A433D55726F39B7F00C9889D /* Logger.swift in Sources */,
+				A433D56026F39B7F00C9889D /* XCGFileLogger.swift in Sources */,
+				A433D55D26F39B7F00C9889D /* FileConfiguration.swift in Sources */,
+				A433D55626F39B7F00C9889D /* FileLoggerProtocol.swift in Sources */,
+				A433D55326F39B7F00C9889D /* LogCategoryProtocol.swift in Sources */,
+				A433D56426F39B7F00C9889D /* FilterProtocol.swift in Sources */,
+				A433D56126F39B7F00C9889D /* OSLogger.swift in Sources */,
+				A433D55F26F39B7F00C9889D /* LoggerBuilder.swift in Sources */,
+				A433D55B26F39B7F00C9889D /* ELFFormatter.swift in Sources */,
+				A433D56326F39B7F00C9889D /* LoggerConfigurationProtocol.swift in Sources */,
+				A433D56726F39B7F00C9889D /* LoggerProtocol.swift in Sources */,
+				A433D56226F39B7F00C9889D /* ConsoleLogger.swift in Sources */,
+				A433D55026F39B7F00C9889D /* curry.swift in Sources */,
+				A433D55126F39B7F00C9889D /* ReuseIDProvider.swift in Sources */,
+				A433D57D26F3A5B200C9889D /* ObjcBridge.swift in Sources */,
+				A433D55826F39B7F00C9889D /* LoggerFormatterProtocol.swift in Sources */,
+				A433D56626F39B7F00C9889D /* LoggerFactory.swift in Sources */,
+				A433D55926F39B7F00C9889D /* ConsoleFormatter.swift in Sources */,
+				A433D55A26F39B7F00C9889D /* SimpleFormatter.swift in Sources */,
+				A433D55E26F39B7F00C9889D /* ConsoleConfiguration.swift in Sources */,
+				A433D55C26F39B7F00C9889D /* LoggerLevel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,6 +555,7 @@
 			files = (
 				A4B4AB7925B5E5B300FBDB67 /* LoggerKitTests.m in Sources */,
 				CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */,
+				A433D56A26F39F8300C9889D /* ObjcBridge+Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -600,6 +628,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -625,9 +654,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -661,6 +691,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -680,8 +711,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -706,13 +738,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 3.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -734,13 +767,14 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
-				INFOPLIST_FILE = Source/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 2.2;
+				MARKETING_VERSION = 3.0;
+				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nuglif.NGLoggerKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

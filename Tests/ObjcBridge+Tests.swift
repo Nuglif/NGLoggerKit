@@ -8,6 +8,8 @@
 
 import Foundation
 
+@testable import NGLoggerKit
+
 @objc extension ObjcBridge {
 
     static func setupDefault() {
