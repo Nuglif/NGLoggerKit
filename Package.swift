@@ -12,22 +12,23 @@ let package = Package(
             targets: ["NGLoggerKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/DaveWoodCom/XCGLogger", from: "7.0.0"),
+        .package(url: "https://github.com/bmalbuck/XCGLogger", .branch("master"))
     ],
     targets: [
         .target(
             name: "NGLoggerKit",
             dependencies: [
-                .product(name: "XCGLogger", package: "XCGLogger"),
-                .product(name: "ObjcExceptionBridging", package: "XCGLogger")
+                .product(name: "XCGLogger", package: "XCGLogger")
             ],
             path: "Sources",
-            publicHeadersPath: ".",
-            cSettings: [.headerSearchPath("ObjC")]),
+            exclude: ["Info.plist"]),
         .testTarget(
             name: "NGLoggerKitTests",
-            dependencies: ["NGLoggerKit"],
+            dependencies: [
+                "NGLoggerKit"
+            ],
             path: "Tests",
-            exclude: ["LoggerKitTests.m"])
+            exclude: ["LoggerKitTests.m",
+                      "Info.plist"])
     ]
 )
