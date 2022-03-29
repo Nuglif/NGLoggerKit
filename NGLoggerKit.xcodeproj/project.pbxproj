@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6EB7444E20EBF49E006AA942 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
+		976A790927F2AAB4002E8DAA /* LoggerExtremeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A790727F2AA27002E8DAA /* LoggerExtremeTests.swift */; };
 		A433D55026F39B7F00C9889D /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53326F39B7F00C9889D /* curry.swift */; };
 		A433D55126F39B7F00C9889D /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53426F39B7F00C9889D /* ReuseIDProvider.swift */; };
 		A433D55226F39B7F00C9889D /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53526F39B7F00C9889D /* logDetails.swift */; };
@@ -82,6 +83,7 @@
 /* Begin PBXFileReference section */
 		6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGLoggerKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGLoggerKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		976A790727F2AA27002E8DAA /* LoggerExtremeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggerExtremeTests.swift; sourceTree = "<group>"; };
 		A433D52D26F396DF00C9889D /* LoggerMacros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoggerMacros.h; sourceTree = "<group>"; };
 		A433D53326F39B7F00C9889D /* curry.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = curry.swift; sourceTree = "<group>"; };
 		A433D53426F39B7F00C9889D /* ReuseIDProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIDProvider.swift; sourceTree = "<group>"; };
@@ -277,6 +279,7 @@
 				A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */,
 				CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */,
 				A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */,
+				976A790727F2AA27002E8DAA /* LoggerExtremeTests.swift */,
 				CD3D0A83239E9F08004A1C4C /* Info.plist */,
 			);
 			path = Tests;
@@ -553,6 +556,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976A790927F2AAB4002E8DAA /* LoggerExtremeTests.swift in Sources */,
 				A4B4AB7925B5E5B300FBDB67 /* LoggerKitTests.m in Sources */,
 				CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */,
 				A433D56A26F39F8300C9889D /* ObjcBridge+Tests.swift in Sources */,
