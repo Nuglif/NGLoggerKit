@@ -8,7 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		6EB7444E20EBF49E006AA942 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
+		976A78FF27F2A995002E8DAA /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 976A78FE27F2A995002E8DAA /* ObjcExceptionBridging */; };
+		976A790127F2A995002E8DAA /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 976A790027F2A995002E8DAA /* XCGLogger */; };
 		976A790927F2AAB4002E8DAA /* LoggerExtremeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976A790727F2AA27002E8DAA /* LoggerExtremeTests.swift */; };
+		976A790B27F2AB0F002E8DAA /* ObjcExceptionBridging in Frameworks */ = {isa = PBXBuildFile; productRef = 976A790A27F2AB0F002E8DAA /* ObjcExceptionBridging */; };
+		976A790D27F2AB0F002E8DAA /* XCGLogger in Frameworks */ = {isa = PBXBuildFile; productRef = 976A790C27F2AB0F002E8DAA /* XCGLogger */; };
 		A433D55026F39B7F00C9889D /* curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53326F39B7F00C9889D /* curry.swift */; };
 		A433D55126F39B7F00C9889D /* ReuseIDProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53426F39B7F00C9889D /* ReuseIDProvider.swift */; };
 		A433D55226F39B7F00C9889D /* logDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A433D53526F39B7F00C9889D /* logDetails.swift */; };
@@ -37,8 +41,6 @@
 		A46FAE8025A77303001FE798 /* NGLoggerKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; };
 		A46FAE8125A77303001FE798 /* NGLoggerKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A4B4AB7925B5E5B300FBDB67 /* LoggerKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */; };
-		A4E23023274834A8005DF837 /* ObjcExceptionBridging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */; };
-		A4E23024274834AA005DF837 /* XCGLogger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A46FAE4F25A7637A001FE798 /* XCGLogger.framework */; };
 		CD3D0A79239E9EFE004A1C4C /* NGLoggerKit.h in Headers */ = {isa = PBXBuildFile; fileRef = CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CD3D0A84239E9F08004A1C4C /* LoggerKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0A82239E9F08004A1C4C /* LoggerKitTests.swift */; };
 		CD3D0AB4239EA1CF004A1C4C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD3D0AA5239EA1CF004A1C4C /* ViewController.swift */; };
@@ -108,8 +110,6 @@
 		A433D54E26F39B7F00C9889D /* LoggerFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerFactory.swift; sourceTree = "<group>"; };
 		A433D54F26F39B7F00C9889D /* LoggerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggerProtocol.swift; sourceTree = "<group>"; };
 		A433D56D26F3A1D400C9889D /* ObjcBridge.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ObjcBridge.swift; sourceTree = "<group>"; };
-		A46FAE4F25A7637A001FE798 /* XCGLogger.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCGLogger.framework; path = Carthage/Build/iOS/XCGLogger.framework; sourceTree = "<group>"; };
-		A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjcExceptionBridging.framework; path = Carthage/Build/iOS/ObjcExceptionBridging.framework; sourceTree = "<group>"; };
 		A4B4AB7825B5E5B300FBDB67 /* LoggerKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoggerKitTests.m; sourceTree = "<group>"; };
 		A4B4AB8225B5EBE600FBDB67 /* ObjcBridge+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObjcBridge+Tests.swift"; sourceTree = "<group>"; };
 		CD3D0A5E239E9EFE004A1C4C /* NGLoggerKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NGLoggerKit.h; sourceTree = "<group>"; };
@@ -131,8 +131,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4E23023274834A8005DF837 /* ObjcExceptionBridging.framework in Frameworks */,
-				A4E23024274834AA005DF837 /* XCGLogger.framework in Frameworks */,
+				976A790B27F2AB0F002E8DAA /* ObjcExceptionBridging in Frameworks */,
+				976A790D27F2AB0F002E8DAA /* XCGLogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				976A78FF27F2A995002E8DAA /* ObjcExceptionBridging in Frameworks */,
 				A46FAE8025A77303001FE798 /* NGLoggerKit.framework in Frameworks */,
+				976A790127F2A995002E8DAA /* XCGLogger in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +164,7 @@
 				CD3D0A81239E9F08004A1C4C /* Tests */,
 				CD3D0AA3239EA1CF004A1C4C /* Example */,
 				6EB7444520EBF49E006AA942 /* Products */,
-				CD3D0A86239E9FE9004A1C4C /* Frameworks */,
+				976A790227F2A9D0002E8DAA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -174,6 +176,13 @@
 				CD3D0A8F239EA143004A1C4C /* iOS-Example.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		976A790227F2A9D0002E8DAA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		A433D52C26F396DF00C9889D /* ObjC */ = {
@@ -285,15 +294,6 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
-		CD3D0A86239E9FE9004A1C4C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				A46FAE6925A770E4001FE798 /* ObjcExceptionBridging.framework */,
-				A46FAE4F25A7637A001FE798 /* XCGLogger.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		CD3D0AA3239EA1CF004A1C4C /* Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -362,6 +362,8 @@
 			);
 			name = NGLoggerKit;
 			packageProductDependencies = (
+				976A790A27F2AB0F002E8DAA /* ObjcExceptionBridging */,
+				976A790C27F2AB0F002E8DAA /* XCGLogger */,
 			);
 			productName = LoggerKit;
 			productReference = 6EB7444420EBF49E006AA942 /* NGLoggerKit.framework */;
@@ -374,7 +376,6 @@
 				6EB7444920EBF49E006AA942 /* Sources */,
 				6EB7444A20EBF49E006AA942 /* Frameworks */,
 				6EB7444B20EBF49E006AA942 /* Resources */,
-				A46FAF5725A89BFF001FE798 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -382,6 +383,8 @@
 				6EB7445020EBF49E006AA942 /* PBXTargetDependency */,
 			);
 			name = NGLoggerKitTests;
+			packageProductDependencies = (
+			);
 			productName = LoggerKitTests;
 			productReference = 6EB7444D20EBF49E006AA942 /* NGLoggerKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -394,7 +397,6 @@
 				CD3D0A8C239EA143004A1C4C /* Frameworks */,
 				CD3D0A8D239EA143004A1C4C /* Resources */,
 				A46FAE8425A77304001FE798 /* Embed Frameworks */,
-				A46FAE8925A77336001FE798 /* Carthage */,
 			);
 			buildRules = (
 			);
@@ -402,6 +404,10 @@
 				A46FAE7F25A772FB001FE798 /* PBXTargetDependency */,
 			);
 			name = "iOS-Example";
+			packageProductDependencies = (
+				976A78FE27F2A995002E8DAA /* ObjcExceptionBridging */,
+				976A790027F2A995002E8DAA /* XCGLogger */,
+			);
 			productName = "ca.lapresse.iOS-Example";
 			productReference = CD3D0A8F239EA143004A1C4C /* iOS-Example.app */;
 			productType = "com.apple.product-type.application";
@@ -439,6 +445,7 @@
 			);
 			mainGroup = 6EB7443A20EBF49E006AA942;
 			packageReferences = (
+				976A78FD27F2A995002E8DAA /* XCRemoteSwiftPackageReference "XCGLogger" */,
 			);
 			productRefGroup = 6EB7444520EBF49E006AA942 /* Products */;
 			projectDirPath = "";
@@ -477,49 +484,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		A46FAE8925A77336001FE798 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/inputFile.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/outputFile.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-		A46FAF5725A89BFF001FE798 /* Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"$(SRCROOT)/inputFile.xcfilelist",
-			);
-			inputPaths = (
-			);
-			name = Carthage;
-			outputFileListPaths = (
-				"$(SRCROOT)/outputFile.xcfilelist",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6EB7443F20EBF49E006AA942 /* Sources */ = {
@@ -926,6 +890,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		976A78FD27F2A995002E8DAA /* XCRemoteSwiftPackageReference "XCGLogger" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DaveWoodCom/XCGLogger.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		976A78FE27F2A995002E8DAA /* ObjcExceptionBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 976A78FD27F2A995002E8DAA /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = ObjcExceptionBridging;
+		};
+		976A790027F2A995002E8DAA /* XCGLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 976A78FD27F2A995002E8DAA /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = XCGLogger;
+		};
+		976A790A27F2AB0F002E8DAA /* ObjcExceptionBridging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 976A78FD27F2A995002E8DAA /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = ObjcExceptionBridging;
+		};
+		976A790C27F2AB0F002E8DAA /* XCGLogger */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 976A78FD27F2A995002E8DAA /* XCRemoteSwiftPackageReference "XCGLogger" */;
+			productName = XCGLogger;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6EB7443B20EBF49E006AA942 /* Project object */;
 }
