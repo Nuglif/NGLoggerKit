@@ -8,7 +8,12 @@ let package = Package(
     platforms: [.iOS(.v10)],
     products: [
         .library(
-            name: "NGLoggerKit",
+            name: "NGLoggerKitDynamic",
+            type: .dynamic,
+            targets: ["NGLoggerKit"]),
+        .library(
+            name: "NGLoggerKitStatic",
+            type: .static,
             targets: ["NGLoggerKit"])
     ],
     dependencies: [
