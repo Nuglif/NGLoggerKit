@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import XCGLogger
+@_implementationOnly import XCGLogger
 
 public final class XCGFileLogger: LoggerProtocol {
 
