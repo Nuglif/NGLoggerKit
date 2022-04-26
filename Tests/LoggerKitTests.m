@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import <NGLoggerKit/LoggerMacros.h>
 #import <NGLoggerKit/NGLoggerKit-Swift.h>
+#import "NGLoggerKitTests-Swift.h"
 
 @interface LoggerKitTests: XCTestCase
 @end
