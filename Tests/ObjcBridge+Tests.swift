@@ -10,7 +10,7 @@ import Foundation
 
 @testable import NGLoggerKit
 
-@objc extension ObjcBridge {
+@objc public extension ObjcBridge {
 
     static func setupDefault() {
         logger.add(logger: LoggerBuilder().buildDefault(subSystem: "Shared Logger"))
