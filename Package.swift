@@ -9,6 +9,7 @@ let package = Package(
     products: [
         .library(
             name: "NGLoggerKit",
+            type: .dynamic,
             targets: ["NGLoggerKit"])
     ],
     dependencies: [
