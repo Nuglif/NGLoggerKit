@@ -3,10 +3,10 @@
     "pins": [
       {
         "package": "XCGLogger",
-        "repositoryURL": "https://github.com/bmalbuck/XCGLogger",
+        "repositoryURL": "https://github.com/DaveWoodCom/XCGLogger",
         "state": {
-          "branch": "master",
-          "revision": "da962de79eea3be305f8f8e3f66752c3a7955afd",
+          "branch": "main",
+          "revision": "3cae293fd145117d0f692148795a6d33e92cc634",
           "version": null
         }
       }
