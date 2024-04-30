@@ -1,6 +1,0 @@
-language: 
-- swift
-osx_image: xcode11.5
-script:
-- carthage bootstrap --cache-builds --platform iOS
-- fastlane scan --scheme=NGLoggerKit

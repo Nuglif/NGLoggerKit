@@ -12,7 +12,7 @@ let package = Package(
             targets: ["NGLoggerKit"])
     ],
     dependencies: [
-        .package(url: "https://github.com/bmalbuck/XCGLogger", .branch("master"))
+        .package(url: "https://github.com/DaveWoodCom/XCGLogger", .branch("main"))
     ],
     targets: [
         .target(
