@@ -61,11 +61,7 @@ public final class LoggerBuilder {
 	}
 
 	public func buildDefault(subSystem: String) -> Logger {
-        var mode: ConsoleLoggerMode = ConsoleLoggerMode.console
-        if #available(iOS 10.0, *) {
-            mode = .oslog
-        }
-		let consoleLoggers = ContiguousArray(makeConsoleLoggers(mode: mode, suggestedConfiguration: nil)(subSystem))
+        let consoleLoggers = ContiguousArray(makeConsoleLoggers(mode: .oslog, suggestedConfiguration: nil)(subSystem))
 		return Logger(subSystem: subSystem, loggers: consoleLoggers)
 	}
 
@@ -79,7 +75,7 @@ public final class LoggerBuilder {
 			if mode.contains(.console) {
 				loggers.append(ConsoleLogger(subSystem: subSystem, configuration: configuration))
 			}
-			if #available(iOS 10.0, *), mode.contains(.oslog) {
+			if mode.contains(.oslog) {
 				loggers.append(OSLogger(subSystem: subSystem, configuration: configuration))
 			}
 			return loggers

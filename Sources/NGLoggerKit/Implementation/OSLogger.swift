@@ -8,7 +8,6 @@
 
 import os.log
 
-@available(iOS 10.0, *)
 public final class OSLogger: LoggerProtocol {
     public let subSystem: String
     public var filter: FilterProtocol
@@ -55,5 +54,4 @@ public final class OSLogger: LoggerProtocol {
 	}
 }
 
-@available(iOS 10.0, *)
 extension OSLogger: ReuseIDProvider {}
