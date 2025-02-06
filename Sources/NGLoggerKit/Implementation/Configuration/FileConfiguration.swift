@@ -44,10 +44,27 @@ public struct FileConfiguration: LoggerConfigurationProtocol {
 		guard let cacheDirectory = cacheDirectoryUrl else {
 			return nil
 		}
-		self.file = cacheDirectory.appendingPathComponent("\(fileName).log")
-		self.formatter = formatter
-		self.shouldShowLogDetails = shouldShowLogDetails
-		self.filter = filter
-		self.autorotateConfiguration = autorotateConfiguration
-	}
+
+        self.init(
+            fileName: fileName,
+            logDirectory: cacheDirectory,
+            formatter: formatter,
+            filter: filter,
+            shouldShowLogDetails: shouldShowLogDetails,
+            autorotateConfiguration: autorotateConfiguration
+        )
+    }
+
+    public init(fileName: String,
+                logDirectory: URL,
+                formatter: LoggerFormatterProtocol,
+                filter: FilterProtocol,
+                shouldShowLogDetails: Bool,
+                autorotateConfiguration: AutoRotateConfiguration?) {
+        self.file = logDirectory.appendingPathComponent("\(fileName).log")
+        self.formatter = formatter
+        self.shouldShowLogDetails = shouldShowLogDetails
+        self.filter = filter
+        self.autorotateConfiguration = autorotateConfiguration
+    }
 }
